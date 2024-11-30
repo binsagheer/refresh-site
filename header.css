@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.unique-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8ecea;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.unique-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.unique-hamburger {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.unique-hamburger .unique-line {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Fullscreen Menu */
+.unique-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.unique-menu.active {
+    display: flex;
+}
+
+.unique-menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.unique-menu-item {
+    margin: 1rem 0;
+}
+
+.unique-menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.unique-menu-link:hover {
+    color: #ff6347;
+}
+
+/* Hamburger Menu Animation */
+.unique-hamburger.active {
+    transform: rotate(80deg);
+}

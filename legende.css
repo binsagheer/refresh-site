@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+}
+
+.bg-skyblue {
+  background: #99c1d1;
+}
+
+.bg-leaf {
+  background: #ABCBAB;
+}
+
+.bg-gray {
+  background: #5E707E;
+}
+
+.bg-tomato {
+  background: #FBC0A7;
+}
+
+.bg-cyan {
+  background: #7DC5BD;
+}
+
+.bg-purple {
+  background: #CF97AF;
+}
+
+.bg-pink {
+  background: #E75C7B;
+}
+
+.bg-yellow {
+  background: #FEF59B;
+}
+
+.bg-blue {
+  background: #7A9FD3;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-dark{
+  color: #525252 !important;
+}
+
+.d-map-boxes {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.d-map-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-image {
+  margin-top: 50px;
+}
+
+.page-image img {
+  width: 100%;
+}
+
+.d-map-box-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.d-map-box-inner .box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shop-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.d-map-box-inner .header {
+  width: fit-content;
+  font-size: 16px;
+  padding: 2px 10px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.legendeinfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legendeinfo .number {
+  font-size: 9px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.legendeinfo .content {
+  flex: 1;
+  font-size: 9px;
+  line-height: 1.2;
+  text-wrap: wrap;
+}
+
+.legendeinfo a {
+  color: #000;
+}
+
+.qr-code {
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.2;
+  text-wrap: wrap;
+}
+.qr-code img {
+  width: 60px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.qr-code a {
+  color: #000;
+}
+
+/* responsive */
+@media (max-width: 1300px) {
+  .d-map-box-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+}
+
+.d-map-responsive {
+  max-width: unset;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.d-map-responsive .d-map-boxes {
+  grid-template-columns: repeat(1, 1fr);
+}
+.d-map-responsive .page-image {
+  margin-top: 0;
+  order: -1;
+}
+.d-map-responsive .d-map-box-inner {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.d-map-responsive .d-map-box-inner .header {
+  grid-column: 1 / span 2;
+  margin: auto;padding: 5px 20px;
+}
+.d-map-responsive .qr-code {
+  grid-column: 1 / 2 span;
+  margin-top: 25px;
+}
+}
+/* temp */
+.d-map-responsive {
+  display: none;
+}
+
+@media(max-width: 991px) {
+  .none {
+    display: none;
+  }
+  .page-image{
+    margin-top: 20px !important;
+    order: 0 !important;
+  }
+
+  .d-map-responsive {
+    display: grid;
+    max-width: 767px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .legendeinfo .number {
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+}
+.legendeinfo .content {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.2;
+  text-wrap: wrap;
+}
+.d-map-responsive .d-map-box-inner .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.d-map-box-inner .header {
+  font-size: 20px;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+.d-map-box-inner .box {
+  gap: 15px 20px;
+  padding: 0 20px;
+}
+
+}
+
+@media(max-width: 576px) {
+  .legendeinfo .number {
+    font-size: 9px;
+    width: 15px;
+    height: 15px;
+}
+.legendeinfo .content {
+  font-size: 12px;
+}
+.d-map-box-inner .header {
+  font-size: 16px;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
+.d-map-box-inner .box {
+  gap: 8px 15px;
+  padding: 0 5px !important;
+}
+.d-map-responsive .d-map-box-inner {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+}
+
+@media (max-width:475px) {
+  .legendeinfo .content {
+    font-size: 11px !important;
+}
+.mobileuserhinweis{color: red;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 300px !important;
+  display: block !important;
+  margin: auto !important;
+
+}
+
+  
+}

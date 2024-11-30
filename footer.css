@@ -1,0 +1,38 @@
+/* Footer Styles */
+.unique-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 5;
+}
+
+.unique-footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.unique-footer-text {
+    font-size: 0.9rem;
+}
+
+.unique-footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.unique-footer-link {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.unique-footer-link:hover {
+    color: #ffffff;
+}

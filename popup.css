@@ -1,0 +1,696 @@
+ /* General Styles */
+ .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%; /* Adjust to ensure it fits smaller screens */
+  max-width: 800px;
+  max-height: 90%; /* Prevent the popup from exceeding viewport height */
+  overflow-y: auto; /* Enable vertical scrolling for content that overflows */
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Ensure body is not scrollable when popup is active */
+body.popup-active {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .popup {
+      max-width: 90%; /* Makes it responsive */
+      height: 600px; /* Ensure the height remains consistent */
+      overflow-y: auto; /* Enables scrolling if content overflows vertically */
+      margin: 0 auto; /* Centers the popup horizontally */
+  }
+}
+
+
+/* Center content inside the popup for all sizes */
+.popup .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Add spacing between sections */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button adjustments for small screens */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+
+  /* Header Section */
+  .i1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .Kontaktsocialmedia > div > a{color: #555;}
+
+  .Logo {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+  .Shopname {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* For tablets and smaller devices */
+    .i1 {
+      flex-direction: column;
+      gap: 10px; /* Reduce the gap for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* For mobile devices */
+    .Logo {
+      width: 110px;
+      height: 70px; /* Slightly reduce the logo size */
+    }
+    .Logo  img{
+      width: 100% !important;
+      height:90% !important;
+      object-fit: contain !important;
+    }
+
+    .Shopname {
+      font-size: 18px; /* Reduce font size for better fit on small screens */
+    }
+  }
+
+  /* Image Section */
+  .i2 {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+  }
+
+  .i2 div {
+    width: 200px;
+    height: 200px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+  
+  }
+
+  .i2 div img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: none;
+    mix-blend-mode: multiply;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .i2 {
+      flex-wrap: wrap;
+      gap: 15px; /* Reduce gap on smaller screens */
+    }
+
+    .i2 div {
+      width: 150px; /* Slightly smaller containers */
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* For mobile devices */
+    .i2 {
+      flex-direction: column;
+      align-items: center; /* Center elements in the column layout */
+      gap: 10px;
+      width: 100%;
+    }
+    .Shopname{text-align: center !important;}
+
+    .i2 div {
+      width: 100%;
+      /* max-width: 150px; */
+      height: auto;
+      max-width: 80%;
+  }
+  }
+
+  /* Description Section */
+  .i3 {
+    display: grid;
+    grid-template-columns: 65% 35%; /* Two columns: 65% and 35% */
+    gap: 10px;
+    margin: 20px auto;
+    width: 90%;
+    align-items: flex-start;
+  }
+
+  /* Style for the container holding the icon and text sections */
+  .i3 > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .icon1,
+  .icon2 {
+    font-size: 2rem;
+    color: #444;
+    margin-right: 10px;
+  }
+
+  .Beschreibung,
+  .Produktinfos {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    width: 100%;
+  }
+
+  /* Responsive adjustments for screens between 480px and 768px */
+  @media (max-width: 768px) and (min-width: 481px) {
+    .i3 {
+      grid-template-columns: 65% 35%; /* Keep two columns layout */
+      gap: 8px; /* Slightly reduce gap */
+    }
+
+    .i3 > div {
+      gap: 8px; /* Reduce gap between icon and text */
+    }
+
+    .icon1,
+    .icon2 {
+      font-size: 1.8rem; /* Slightly smaller icon size */
+      margin-right: 8px;
+    }
+
+    .Beschreibung,
+    .Produktinfos {
+      font-size: 13px; /* Slightly smaller font size */
+      line-height: 1.6; /* Adjust line height */
+    }
+  }
+
+  /* Responsive adjustments for screens up to 480px */
+  @media (max-width: 480px) {
+    .i3 {
+      grid-template-columns: 1fr; /* Switch to single column layout */
+      gap: 5px;
+    }
+
+    .icon1,
+    .icon2 {
+      font-size: 1.5rem;
+      margin-right: 8px;
+    }
+
+    .Beschreibung,
+    .Produktinfos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      line-height: 1.6;
+      width: 90% !important;
+      margin-left: 1.2rem;
+    }
+
+    /* Make the content appear in a column, with the icon on top and content centered below */
+    .i3 > div {
+      flex-direction: column; /* Stack icon and content vertically */
+      align-items: center; /* Center the content horizontally */
+      gap: 5px; /* Space between icon and content */
+    }
+
+    /* Make the entire body or container scrollable */
+    body,
+    .i3,
+    .i4 {
+      overflow-x: auto; /* Allows horizontal scrolling */
+      overflow-y: auto; /* Allows vertical scrolling */
+      width: 100%; /* Ensures content takes the full width */
+    }
+
+    /* Ensure that content inside .i3 and .i4 will be scrollable if needed */
+    .i3,
+    .i4 {
+      max-width: 100%; /* Ensures that the grid will not overflow */
+      min-width: 100%; /* Forces the elements to take full width */
+    }
+    .clock1 {
+      display: flex !important; /* Enable flexbox layout */
+      justify-content: center !important; /* Horizontally center content */
+      align-items: center !important; /* Vertically center content */
+      width: 100% !important; /* Full width */
+      height: 100px !important; /* Add height for alignment to work */
+  
+  }
+  
+  .clock1 > * {
+      margin: auto !important; /* Center each child element */
+      text-align: center !important; /* Center content inside each child */
+  }
+  
+  .clock-2, .Oeffnungszeiten {
+      min-width: 50px !important; /* Ensure child elements have dimensions */
+      padding: 8px !important; /* Optional: Add padding */
+  }
+  
+  
+  }
+
+  /* Footer Section */
+  .i4 {
+    display: grid;
+    grid-template-columns: 65% 35%; /* Two columns: 65% and 35% */
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Styling for the clock icon */
+  .clock {
+
+    top: 0;
+    left: 2rem;
+    font-size: 1.8rem;
+  }
+
+  /* First Column: Oeffnungszeiten */
+  .Oeffnungszeiten {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #444;
+    /* padding-left: 5.5rem; */
+    /* padding-right: 10rem; */
+  }
+
+  /* Second Column: Kontaktsocialmedia */
+  .Kontaktsocialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    margin-left: -1.1rem;
+    padding-right: 2rem;
+  }
+
+  /* Inner elements styling */
+  .Telefon,
+  .Adresse,
+  .Domain {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #555;
+  }
+
+  .Socialmediaverlinkungen {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 0.1rem;
+    font-size: 1.8rem;
+  }
+
+  /* Icon Styling */
+  .personal {
+    font-size: 1.8rem;
+  }
+
+
+.Kontaktsocialmedia{padding-inline: 10px !important;}
+  .clock1 {
+  display: flex !important; /* Enable flexbox layout */
+  justify-content: center !important; /* Horizontally center content */
+  align-items: center !important; /* Vertically center content */
+  width: 100% !important; /* Full width */
+
+
+}
+
+.clock1 > * {
+  margin: auto !important; /* Center each child element */
+  text-align: center !important; /* Center content inside each child */
+}
+
+.clock-2, .Oeffnungszeiten {
+  min-width: 50px !important; /* Ensure child elements have dimensions */
+  padding: 8px !important; /* Optional: Add padding */
+}
+
+  /* Responsive adjustments for screens between 481px and 768px */
+  @media (max-width: 768px) and (min-width: 481px) {
+    .i4 {
+      grid-template-columns: 65% 35%; /* Maintain two-column layout */
+      gap: 15px; /* Reduce gap slightly */
+    }
+    .clock1{display: flex !important;justify-content: center !important;align-items: flex-start !important;}
+    /* .clock-2{width: 124px !important;} */
+
+    .clock {
+      font-size: 1.6rem; /* Reduce icon size */
+      left: 1.5rem; /* Adjust position slightly */
+    }
+
+    .Oeffnungszeiten {
+      font-size: 13px; /* Smaller font size */
+      padding-left: 4.5rem; /* Adjust padding for alignment */
+      padding-right: 8rem;
+      line-height: 1.4; /* Tighter line height */
+      
+    }
+
+    .Kontaktsocialmedia {
+      gap: 10px; /* Reduce gap */
+      font-size: 13px;
+      margin-left: -0.5rem; /* Adjust margin for spacing */
+    }
+
+    .Telefon,
+    .Adresse,
+    .Domain {
+      gap: 12px; /* Reduce gap between elements */
+    }
+
+    .Socialmediaverlinkungen {
+      font-size: 1.6rem; /* Slightly smaller icon size */
+    }
+
+    .personal {
+      font-size: 1.6rem;
+    }
+  }
+  :root {
+    --default-padding: 8.7rem;
+    --default-font-size: 12px;
+  }
+
+  @media (max-width: 480px) {
+    .i4 {
+      grid-template-columns: 1fr; /* Switch to single column */
+      gap: 10px;
+      width: 40%;
+    }
+
+    .clock1{display: flex !important;justify-content: center !important;align-items: flex-start !important;flex-direction: column !important;}
+    .clock-2{width: 124px !important;}
+
+    .Oeffnungszeiten {
+      font-size: var(
+        --default-font-size
+      ); /* Use the variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(
+        var(--default-padding) - 0.7rem
+      ); /* Use the variable for padding */
+      padding-right: calc(
+        var(--default-padding) - 0.7rem
+      ); /* Adjust right padding slightly */
+    }
+    .Kontaktsocialmedia {
+      font-size: var(
+        --default-font-size
+      ); /* Use the variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(
+        var(--default-padding) - 1.7rem
+      ); /* Use the variable for padding */
+      padding-right: calc(
+        var(--default-padding) - 0.7rem
+      ); /* Adjust right padding slightly */
+    }
+
+    .Socialmediaverlinkungen {
+      font-size: 1.4rem;
+    }
+
+    .personal {
+      font-size: 1.4rem;
+    }
+
+
+
+    /* Make the entire body or container scrollable */
+    body,
+    .i3,
+    .i4 {
+      overflow-x: auto;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .i3,
+    .i4 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .Kontaktsocialmedia{display: block !important;margin: auto !important;}
+
+  }
+
+  @media (max-width: 400px) {
+    /* Apply the same styles as for 480px */
+    .i4 {
+      grid-template-columns: 1fr; /* Switch to single column */
+      gap: 10px;
+      width: 40%;
+    }
+
+    .clock {
+      font-size: 1.4rem;
+      /* padding-left: calc(var(--default-padding) - 1.7rem); */
+    }
+    .Oeffnungszeiten {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 1.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+    .Kontaktsocialmedia {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 2.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+
+    .Socialmediaverlinkungen {
+      font-size: 1.4rem;
+    }
+
+    .personal {
+      font-size: 1.4rem !important;
+
+      justify-content: center !important;
+      display: grid !important;
+      place-items: center !important;
+  }
+  .Telefon, .Adresse, .Domain
+.personal{position: relative !important;}
+.Kontaktsocialmedia{display: block !important;margin: auto !important;}
+
+
+
+    .i4 > div:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .i4 > div {
+      flex-direction: column; /* Stack icon and content vertically */
+      align-items: center; /* Center the content horizontally */
+      gap: 10px; /* Space between icon and content */
+    }
+    .clock1{display: flex !important;justify-content: center !important;align-items: flex-start !important;flex-direction: column !important;}
+    .clock-2{width: 124px !important;}
+  
+  }
+    @media (max-width: 400px) {
+      body, .i3, .i4 {
+          width: 100%;
+          overflow-x: hidden !important; /* Prevent horizontal scrolling caused by accidental layout shifts */
+      }
+  }
+  
+  /* For mobile zoom functionality */
+  html {
+      touch-action: pan-x pan-y !important; /* Enables smooth panning without visible scrollbars */
+  }
+  
+
+    .i3,
+    .i4 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  
+  @media (max-width: 310px) {
+    /* Apply the same styles as for 480px */
+    .i4 {
+      grid-template-columns: 1fr; /* Switch to single column */
+      gap: 10px;
+      width: 40%;
+    }
+
+    .clock {
+      font-size: 1.4rem;
+      /* padding-left: calc(var(--default-padding) - 3rem); */
+      padding-inline-start: 0x !important;
+    }
+
+    .Oeffnungszeiten {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 2.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+    .Kontaktsocialmedia {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 3.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+
+    .Socialmediaverlinkungen {
+      font-size: 1.4rem;
+    }
+
+    .personal {
+      font-size: 1.4rem;
+    }
+
+    .i4 > div:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .i4 > div {
+      flex-direction: column; /* Stack icon and content vertically */
+      align-items: center; /* Center the content horizontally */
+      gap: 10px; /* Space between icon and content */
+    }
+
+    body,
+    .i3,
+    .i4 {
+      overflow-x: auto;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .i3,
+    .i4 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+  @media (max-width: 285px) {
+    /* Apply the same styles as for 480px */
+    .i4 {
+      grid-template-columns: 1fr; /* Switch to single column */
+      gap: 10px;
+      width: 40%;
+    }
+
+    .clock {
+      font-size: 1.4rem;
+      padding-left: calc(var(--default-padding) - 4rem);
+    }
+
+    .Oeffnungszeiten {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 3.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+    .Kontaktsocialmedia {
+      font-size: var(
+        --default-font-size
+      ); /* Use the same variable for font size */
+      margin-top: 2rem;
+      padding-left: calc(var(--default-padding) - 4.9rem);
+      padding-right: calc(var(--default-padding) - 0.7rem);
+    }
+
+    .Socialmediaverlinkungen {
+      font-size: 1.4rem;
+    }
+
+    .personal {
+      font-size: 1.4rem;
+    }
+
+  
+
+    body,
+    .i3,
+    .i4 {
+      overflow-x: auto;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .i3,
+    .i4 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+
+
+

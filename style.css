@@ -1,0 +1,22 @@
+
+         /* Tooltip Styles */
+         .tooltip {
+            position: absolute;
+            display: none;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            font-size: 25px;
+            border-radius: 4px;
+            pointer-events: none;
+            z-index: 1100;
+        }
+
+
+
+        @media (max-width: 480px) {
+        .tooltip {
+          display: none !important;
+        }
+      }
+    

@@ -1,0 +1,3578 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="legende.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+
+
+
+
+
+     <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+      <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+       <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+        <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+         <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+          <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+           <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+            <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+             <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+
+
+             <header class="unique-header">
+              <div class="unique-logo">
+                <a href="http://"><img src="Mapshopbilder/logo.svg" alt=""></a>
+              </div>
+              <div class="unique-hamburger" id="unique-hamburger">
+                  <div class="unique-line"></div>
+                  <div class="unique-line"></div>
+                  <div class="unique-line"></div>
+              </div>
+          </header>
+          <nav class="unique-menu" id="unique-menu">
+              <ul class="unique-menu-list">
+                  <li class="unique-menu-item"><a href="#home" class="unique-menu-link">Oberstaufen Karte</a></li>
+                  <li class="unique-menu-item"><a href="#about" class="unique-menu-link">Veranstaltungskalender</a></li>
+                
+              </ul>
+          </nav>
+         <script src="header.js"></script>
+        
+
+
+                  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+      <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+       <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+        <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+         <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+          <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+           <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+            <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+             <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+                  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->  <!--HEADER-->
+
+
+    <!-- Tooltip -->
+
+
+
+
+
+    <div class="tooltip" id="tooltip"></div>
+
+
+
+
+
+
+    <!-- Overlay und Popup -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="popup">
+      <div class="container">
+        <div class="i1">
+          <div class="Logo">
+            <img
+              id="popupLogo"
+              src=""
+              alt="Shop Logo"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="Shopname" id="popupTitle"></div>
+        </div>
+        <br />
+        <div class="i2">
+          <div class="Bild1">
+            <img
+              id="popupbild1"
+              src=""
+              alt="Hauptfoto"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="Bild2">
+            <img 
+              id="popupbild2"
+              src=""
+              alt="Hauptfoto"
+              style="width: 100%; height: 100%"
+            />
+            <!-- Weitere Bilder -->
+          </div>
+          <div class="Bild3">
+            <img
+              id="popupbild3"
+              src=""
+              alt="Hauptfoto"
+              style="width: 100%; height: 100%"
+            />
+            <!-- Weitere Bilder -->
+          </div>
+        </div>
+        <div class="i3">
+          <div>
+            <i class="ri-pushpin-fill icon1"></i>
+
+            <div class="Beschreibung" id="popupbeschreibung"></div>
+          </div>
+          <div>
+            <i class="ri-shopping-cart-2-line icon2"></i>
+
+            <div class="Produktinfos" id="popupProductInfo"></div>
+          </div>
+<!--  -->
+        </div>
+        <div class="i4">
+          <div class="clock1">
+            <div class="clock-2">
+            <i class="ri-timer-2-line clock"></i></div>
+
+            <div class="Oeffnungszeiten" id="popupHours"></div>
+          </div>
+          <div class="Kontaktsocialmedia">
+            <div class="Telefon" id="popupContact">
+              <i class="ri-phone-line personal"></i>
+            </div>
+            <div class="Adresse" id="popupadresse">
+              <i class="ri-home-5-line personal"></i>
+            </div>
+            <div class="Domain" id="popupDomain">
+              <i class="ri-global-line personal"></i>
+            </div>
+            <!-- Social Media Links   <div class="Socialmediaverlinkungen" id="popupSocialMedia"></div>            -->
+          
+          </div>
+          
+          </div>
+          <!--  -->
+         
+        </div>
+        <button class="close-btn" onclick="closePopup()">X</button>
+      </div>
+  
+  
+
+    <!-- SVG-Karte mit Shops -->
+ 
+    <!-- SVG-Karte mit Shops -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024">
+      <image width="100%" height="1024" href="Karte.svg" />
+      <g id="shopGroup"></g>
+    </svg>
+
+
+
+
+
+
+
+    <br>
+    <br>
+ <div class="mobileuserhinweis" style="color: red; text-align: center; font-size: 12px; font-weight: bold; margin-top: 10px; margin-bottom: 20px;">
+  <p>Mobile User aufgepasst! , Zoome an deinen Gewünschten Shop , und Zoome wieder zurück um die ganze ansicht zu erhalten
+    <br>
+
+  </p>
+ </div>
+
+
+ 
+
+
+        
+    <div class="d-map-boxes none">
+    <div class="d-map-box">
+      <div class="d-map-box-inner">
+        <div class="box">
+          <div class="header bg-skyblue">
+            <h5>MODE, SCHUHE & SPORT</h5>
+          </div>
+        
+          <div id="shop1" class="legendeinfo">
+            <h5 class="number bg-skyblue">1</h5>
+            <div class="content">
+              <p>Bienenkorb Lifestyle</p>
+              <p>Kirchplatz 16</p>
+              <p><a target="_blank" href="https://bienenkorb-lifestyle.de" target="_blank">bienenkorb-lifestyle.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop2" class="legendeinfo">
+            <h5 class="number bg-skyblue">2</h5>
+            <div class="content">
+              <p>Boutique Ma-Vie</p>
+              <p>Hugo-von-Königseggstr. 14</p>
+              <p><a target="_blank" href="https://boutique-ma-vie.de" target="_blank">boutique-ma-vie.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop3" class="legendeinfo">
+            <h5 class="number bg-skyblue">3</h5>
+            <div class="content">
+              <p>Caprice Alpengwand Trachten</p>
+              <p>Rainwaldstraße 2</p>
+              <p><a target="_blank" href="https://caprice-trachten.de" target="_blank">caprice-trachten.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop4" class="legendeinfo">
+            <h5 class="number bg-skyblue">4</h5>
+            <div class="content">
+              <p>Curvy Mode</p>
+              <p>Hugo-von-Köngisegg-Str 16</p>
+            </div>
+          </div>
+          
+          <div id="shop5" class="legendeinfo">
+            <h5 class="number bg-skyblue">5</h5>
+            <div class="content">
+              <p>émilia Mode</p>
+              <p>Rothenfelsstraße 6</p>
+              <p><a target="_blank" href="https://emiliamode.com" target="_blank">emiliamode.com</a></p>
+            </div>
+          </div>
+          
+          <div id="shop6" class="legendeinfo">
+            <h5 class="number bg-skyblue">6</h5>
+            <div class="content">
+              <p>Felbinger Damenausstatter und Aigner Shop</p>
+              <p>Schloßstraße 2</p>
+              <p><a target="_blank" href="https://felbinger-damenausstatter.de" target="_blank">felbinger-damenausstatter.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop7" class="legendeinfo">
+            <h5 class="number bg-skyblue">7</h5>
+            <div class="content">
+              <p>Gelis Tracht</p>
+              <p>Johann-Schroth-Straße 2</p>
+              <p>Phone: <a target="_blank" href="tel:+083867742">08386 7742</a></p>
+            </div>
+          </div>
+          
+          <div id="shop8" class="legendeinfo">
+            <h5 class="number bg-skyblue">8</h5>
+            <div class="content">
+              <p>Golfzentrum Oberstaufen</p>
+              <p>Buflings 1a, Buflings</p>
+              <p><a target="_blank" href="https://golfzentrum-oberstaufen.de" target="_blank">golfzentrum-oberstaufen.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop9" class="legendeinfo">
+            <h5 class="number bg-skyblue">9a</h5>
+            <div class="content">
+              <p>Hagspiel Moden</p>
+              <p>Schlossstraße 5</p>
+              <p><a target="_blank" href="https://hagspiel-moden.de" target="_blank">hagspiel-moden.de</a></p>
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="box">
+  
+          <div id="shop10" class="legendeinfo">
+            <h5 class="number bg-skyblue">9b</h5>
+            <div class="content">
+              <p>Hagspiel Moden Männer</p>
+              <p>Schloßstraße 7</p>
+              <p><a target="_blank" href="tel:+01745846361">0174 5846361</a></p>
+            </div>
+          </div>
+          
+          <div id="shop11" class="legendeinfo">
+            <h5 class="number bg-skyblue">10</h5>
+            <div class="content">
+              <p>Häusler Modepunkt</p>
+              <p>Bahnhofstraße 11</p>
+              <p><a target="_blank" href="https://modepunkt.de" target="_blank">modepunkt.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop12" class="legendeinfo">
+            <h5 class="number bg-skyblue">11</h5>
+            <div class="content">
+              <p>Hubert Pflug Schuh-moden & Accessoires</p>
+              <p>Bahnhofstraße 4a</p>
+              <p><a target="_blank" href="https://hubert-pflug.de" target="_blank">hubert-pflug.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop13" class="legendeinfo">
+            <h5 class="number bg-skyblue">12</h5>
+            <div class="content">
+              <p>Kaulberg Badeshop</p>
+              <p>Rainwaldstraße 3</p>
+              <p><a target="_blank" href="https://kaulberg.de" target="_blank">kaulberg.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop14" class="legendeinfo">
+            <h5 class="number bg-skyblue">13</h5>
+            <div class="content">
+              <p>Meine Größe</p>
+              <p>Bahnhofstraße 11</p>
+              <p><a target="_blank" href="tel:+083869915196">08386 9915 196</a></p>
+            </div>
+          </div>
+          
+          <div id="shop15" class="legendeinfo">
+            <h5 class="number bg-skyblue">14</h5>
+            <div class="content">
+              <p>LAND-HAUS Trachten</p>
+              <p>Rainwaldstraße 3</p>
+              <p><a target="_blank" href="https://trachten-landhaus.de" target="_blank">trachten-landhaus.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop16" class="legendeinfo">
+            <h5 class="number bg-skyblue">15</h5>
+            <div class="content">
+              <p>Mode Kundruweit</p>
+              <p>Schloßstraße 12</p>
+              <p><a target="_blank" href="https://kundruweit.de" target="_blank">kundruweit.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop17" class="legendeinfo">
+            <h5 class="number bg-skyblue">16</h5>
+            <div class="content">
+              <p>Modewerk Oberstaufen</p>
+              <p>Outlet für Sport & Mode, Bahnhofsplatz 3</p>
+              <p><a target="_blank" href="https://modewerk-outlet.de" target="_blank">modewerk-outlet.de</a></p>
+            </div>
+          </div>
+          
+          <div id="shop18" class="legendeinfo">
+            <h5 class="number bg-skyblue">17</h5>
+            <div class="content">
+              <p>mode-eck Helga</p>
+              <p>Schloßstraße 10</p>
+              <p><a target="_blank" href="tel:+08386328">08386 328</a></p>
+            </div>
+          </div>
+          
+          <div id="shop19" class="legendeinfo">
+            <h5 class="number bg-skyblue">18</h5>
+            <div class="content">
+              <p>Nina von C. Store</p>
+              <p>Bahnhofstraße 8</p>
+              <p><a target="_blank" href="tel:+083869802680">08386 9802 680</a></p>
+            </div>
+          </div>
+          
+        </div>        
+             
+        <div class="box">
+  
+          <div id="shop20" class="legendeinfo">
+            <h5 class="number bg-skyblue">19</h5>
+            <div class="content">
+              <p>Obermeyer Modemarkt</p>
+              <p>Gottfried-Resl-Weg 4</p>
+              <a target="_blank" href="https://obermeyer-modemarkt.de" target="_blank">obermeyer-modemarkt.de</a>
+            </div>
+          </div>
+          
+          <div id="shop21" class="legendeinfo">
+            <h5 class="number bg-skyblue">20</h5>
+            <div class="content">
+              <p>Radsport Hermann</p>
+              <p>Bahnhofsplatz 2</p>
+              <a target="_blank" href="https://radcenter-hermann.de" target="_blank">radcenter-hermann.de</a>
+            </div>
+          </div>
+          
+          <div id="shop22" class="legendeinfo">
+            <h5 class="number bg-skyblue">21</h5>
+            <div class="content">
+              <p>RP Moda</p>
+              <p>Bahnhofstraße 6</p>
+              <a target="_blank" href="https://rp-moda.de" target="_blank">rp-moda.de</a>
+            </div>
+          </div>
+          
+          <div id="shop23" class="legendeinfo">
+            <h5 class="number bg-skyblue">22</h5>
+            <div class="content">
+              <p>Schnäppchen Schuh</p>
+              <p>Lindauer Straße 26</p>
+              <a target="_blank" href="https://hubert-pflug.de" target="_blank">hubert-pflug.de</a>
+            </div>
+          </div>
+          
+          <div id="shop24" class="legendeinfo">
+            <h5 class="number bg-skyblue">23</h5>
+            <div class="content">
+              <p>Schuhhaus Kuhn</p>
+              <p>Bahnhofstraße 2</p>
+              <a target="_blank" href="https://schuhhaus-kuhn.de" target="_blank">schuhhaus-kuhn.de</a>
+            </div>
+          </div>
+          
+          <div id="shop25" class="legendeinfo">
+            <h5 class="number bg-skyblue">24</h5>
+            <div class="content">
+              <p>Schuhe wie Barfuß</p>
+              <p>Schloßstraße 10</p>
+              <a target="_blank" href="https://schuhewiebarfuss-ober-staufen.de" target="_blank">schuhewiebarfuss-ober-staufen.de</a>
+            </div>
+          </div>
+          
+          <div id="shop26" class="legendeinfo">
+            <h5 class="number bg-skyblue">25</h5>
+            <div class="content">
+              <p>Schuh-Mann</p>
+              <p>Bahnhofstraße 6</p>
+              <a target="_blank" href="tel:+08386939254">08386 939254</a>
+            </div>
+          </div>
+          
+          <div id="shop27" class="legendeinfo">
+            <h5 class="number bg-skyblue">26</h5>
+            <div class="content">
+              <p>Sport Hauber E-Bike Shop</p>
+              <p>Kalzhofer Straße 22</p>
+              <a target="_blank" href="https://sport-hauber.de" target="_blank">sport-hauber.de</a>
+            </div>
+          </div>
+          
+          <div id="shop28" class="legendeinfo">
+            <h5 class="number bg-skyblue">27</h5>
+            <div class="content">
+              <p>Sport Hauber Pro Shop</p>
+              <p>In der Au 5, Steibis</p>
+              <a target="_blank" href="https://sport-hauber.de" target="_blank">sport-hauber.de</a><br>
+              <a target="_blank" href="tel:+083868529">08386 8529</a>
+            </div>
+          </div>
+          
+          <div id="shop29" class="legendeinfo">
+            <h5 class="number bg-skyblue">28</h5>
+            <div class="content">
+              <p>Sport Markt</p>
+              <p>Hugo-von-Königseggstr. 11</p>
+              <a target="_blank" href="https://sport-markt.com" target="_blank">sport-markt.com</a>
+            </div>
+          </div>
+        
+        </div>
+        
+      </div>
+      <div class="page-image">
+        <img src="placeholderimage.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="d-map-box">
+      <div class="d-map-box-inner">
+        <div class="box">
+  
+          <div id="shop30" class="legendeinfo">
+            <h5 class="number bg-skyblue">29</h5>
+            <div class="content">
+              <p>ThoMi Mode+Sport <br> Rothenfelsstraße 7</p>
+              <a target="_blank" href="https://thomi-sports.de" target="_blank">thomi-sports.de</a>
+            </div>
+          </div>
+          
+          <div id="shop31" class="legendeinfo">
+            <h5 class="number bg-skyblue">30</h5>
+            <div class="content">
+              <p>Trachten Strele <br>Rainwaldstraße 1</p>
+              <a target="_blank" href="https://trachtenmoden-strele.de" target="_blank">trachtenmoden-strele.de</a>
+            </div>
+          </div>
+          
+          <div id="shop32" class="legendeinfo">
+            <h5 class="number bg-skyblue">31</h5>
+            <div class="content">
+              <p>Twenty7Shoes <br> Kalzhofer Straße 4</p>
+              <a target="_blank" href="https://twenty7shoes.de" target="_blank">twenty7shoes.de</a>
+            </div>
+          </div>
+          
+          <div id="shop33" class="legendeinfo">
+            <h5 class="number bg-skyblue">32</h5>
+            <div class="content">
+              <p>XL Mode <br>Schloßstraße 24</p>
+              <a target="_blank" href="https://xl-mode.de" target="_blank">xl-mode.de</a>
+            </div>
+          </div>
+        
+          <div class="header bg-leaf">
+            <h5>GESCHENKE & ACCESSOIRES</h5>
+          </div>
+          
+          <div id="shop34" class="legendeinfo">
+            <h5 class="number bg-leaf">1</h5>
+            <div class="content">
+              <p>Alte Schmiede <br>Lindauer Straße 19</p>
+              <a target="_blank" href="tel:+01778862625">0177 8862625</a>
+            </div>
+          </div>
+          
+          <div id="shop35" class="legendeinfo">
+            <h5 class="number bg-leaf">2</h5>
+            <div class="content">
+              <p>Antony‘s <br> Kunst & AuktionshausKirchplatz 4</p>
+              <a target="_blank" href="https://antonys-auktionshaus.de" target="_blank">antonys-auktionshaus.de</a>
+            </div>
+          </div>
+          
+          <div id="shop36" class="legendeinfo">
+            <h5 class="number bg-leaf">3</h5>
+            <div class="content">
+              <p>Bärbels Schaf- & Fellstube <br>Bahnhofstraße 2b</p>
+              <a target="_blank" href="https://fell-stube.de" target="_blank">fell-stube.de</a>
+            </div>
+          </div>
+          
+          <div id="shop37" class="legendeinfo">
+            <h5 class="number bg-leaf">4</h5>
+            <div class="content">
+              <p>Bücher Edele <br>Hugo-von-Königseggstr. 13</p>
+              <a target="_blank" href="https://edele.de" target="_blank">edele.de</a>
+            </div>
+          </div>
+          
+          <div id="shop38" class="legendeinfo">
+            <h5 class="number bg-leaf">5</h5>
+            <div class="content">
+              <p>Gärtnerei Stehle <br>Hugo-von-Königseggstr. 2</p>
+              <a target="_blank" href="https://gaertnerei-stehle.de" target="_blank">gaertnerei-stehle.de</a>
+            </div>
+          </div>
+          
+          <div id="shop39" class="legendeinfo">
+            <h5 class="number bg-leaf">6</h5>
+            <div class="content">
+              <p>Goods Concept Store <br>Schloßstraße 9</p>
+              <a target="_blank" href="https://goods-conceptstore.de" target="_blank">goods-conceptstore.de</a>
+            </div>
+          </div>
+          
+          <div id="shop40" class="legendeinfo">
+            <h5 class="number bg-leaf">7</h5>
+            <div class="content">
+              <p>Heimatgut Boutique/ Resort Bergkristall <br> Willis 8, Willis</p>
+              <a target="_blank" href="https://bergkristall.de/shop" target="_blank">bergkristall.de/shop</a>
+            </div>
+          </div>
+          
+          <div id="shop41" class="legendeinfo">
+            <h5 class="number bg-leaf">8</h5>
+            <div class="content">
+              <p>Natur Bunt Leben - Laden & Café <br>
+                Säntisweg 9</p>
+              <a target="_blank" href="https://naturbuntleben.de" target="_blank">naturbuntleben.de</a>
+            </div>
+          </div>
+          
+          <div id="shop42" class="legendeinfo">
+            <h5 class="number bg-leaf">9</h5>
+            <div class="content">
+              <p>Martina Fink Interieur <br>
+                Kirchlpatz 4</p>
+              <a target="_blank" href="https://fink-interieur.de" target="_blank">fink-interieur.de</a>
+            </div>
+          </div>
+          
+          <div id="shop43" class="legendeinfo">
+            <h5 class="number bg-leaf">10</h5>
+            <div class="content">
+              <p>Papeterie Mader <br> Kalzhofer Straße 2</p>
+              <a target="_blank" href="tel:+083861800">08386 1800</a>
+            </div>
+          </div>
+          
+          <div id="shop44" class="legendeinfo">
+            <h5 class="number bg-leaf">11</h5>
+            <div class="content">
+              <p>Raucher Boutique Göppel <br> Hugo-von-Königseggstr. 2</p>
+              <a target="_blank" href="https://raucherboutique.de" target="_blank">raucherboutique.de</a>
+            </div>
+          </div>
+          
+          <div id="shop45" class="legendeinfo">
+            <h5 class="number bg-leaf">12</h5>
+            <div class="content">
+              <p>Renate von Ohlen Geschenkideen <br> Schloßstraße 1</p>
+              <a target="_blank" href="tel:+083862826">08386 2826</a>
+            </div>
+          </div>
+          
+          <div id="shop46" class="legendeinfo">
+            <h5 class="number bg-leaf">13</h5>
+            <div class="content">
+              <p>Trend Alm <br> Kirchplatz 2</p>
+              <a target="_blank" href="https://trendalm.de" target="_blank">trendalm.de</a>
+            </div>
+          </div>
+          
+          <div id="shop47" class="legendeinfo">
+            <h5 class="number bg-leaf">14</h5>
+            <div class="content">
+              <p>S i ́Düpfle <br>
+                Am Lohacker 5</p>
+              <a target="_blank" href="tel:+083867060">08386 7060</a>
+            </div>
+          </div>
+          
+          <div class="header bg-gray">
+            <h5>FEINKOST & LEBENSMITTEL</h5>
+          </div>
+          
+          <div id="shop48" class="legendeinfo">
+            <h5 class="number bg-gray">1</h5>
+            <div class="content">
+              <p>Allgäuer Alpenwasser Werksverkauf <br>Salzstraße 52, Wiedemannsdorf</p>
+              <a target="_blank" href="tel:+08325444">08325 444</a>
+            </div>
+          </div>
+          
+          <div id="shop49" class="legendeinfo">
+            <h5 class="number bg-gray">2</h5>
+            <div class="content">
+              <p>Allgäuer Honigladen <br>Rothenfelsstraße 7</p>
+              <a target="_blank" href="tel:+08386980345">08386 980 345</a>
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="box">
+          <!-- SHOP BOXES -->
+          <div class="shop-box-container">
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">3</h5>
+                  <div class="content">
+                      <p>Bäckerei Münzel <br>Kirchplatz 2</p>
+                      <a target="_blank" href="https://baeckerei-muenzel.de/">baeckerei-muenzel.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">4</h5>
+                  <div class="content">
+                      <p>Bergkäserei Steibis <br>Im Dorf 12, Steibis</p>
+                      <a target="_blank" href="tel:+083868156">08386 8156</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">5</h5>
+                  <div class="content">
+                      <p>Dorfladen Dorfhaus <br>Kirchdorfer Straße 5+7, Thalkirchdorf</p>
+                      <a target="_blank" href="tel:+083259581">08325 9581</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">6</h5>
+                  <div class="content">
+                      <p>Eva Maria Nussbaumer <br>Lindauer Straße 6</p>
+                      <a target="_blank" href="https://fleischundwurstnussbaumer.de">fleischundwurstnussbaumer.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">7</h5>
+                  <div class="content">
+                      <p>Feneberg Oberstaufen <br>Kirchplatz 3</p>
+                      <a target="_blank" href="https://feneberg.de">feneberg.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">8</h5>
+                  <div class="content">
+                      <p>Fristo Getränkemarkt <br>Kalzhofer Straße 22</p>
+                      <a target="_blank" href="https://fristo.de">fristo.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">9</h5>
+                  <div class="content">
+                      <p>Genussraum Schönherr <br>Feinkost Lindauerstraße 12</p>
+                      <a target="_blank" href="https://genussraum-schoenherr.de">genussraum-schoenherr.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">10</h5>
+                  <div class="content">
+                      <p>Heumilchkäserei Rutzhofen <br>Hugo-von-Königseggstr. 7</p>
+                      <a target="_blank" href="https://sennerei-rutzhofen.de">sennerei-rutzhofen.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">11</h5>
+                  <div class="content">
+                      <p>Hofkäserei Nußbaumer <br>Konstanzer Straße 11, Thalkirchdorf</p>
+                      <a target="_blank" href="tel:+083259230">08325 9230</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">12</h5>
+                  <div class="content">
+                      <p>Kaufmarkt <br>Kalzhofer Straße 24</p>
+                      <a target="_blank" href="https://feneberg.de">feneberg.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">13</h5>
+                  <div class="content">
+                      <p>Norma <br>Lindauer Straße 28</p>
+                      <a target="_blank" href="https://norma-online.de">norma-online.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">14</h5>
+                  <div class="content">
+                      <p>Penninger Schnapskabinett <br>Kirchplatz 2</p>
+                      <a target="_blank" href="tel:+08386962076">08386 962 076</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">15</h5>
+                  <div class="content">
+                      <p>Staufner Käs-Kuche <br>Lindauer Straße 6</p>
+                      <a target="_blank" href="https://staufner-kaeskuche.de">staufner-kaeskuche.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-gray">16</h5>
+                  <div class="content">
+                      <p>Steibiner Dorfmarkt <br>Im Dorf 36, Steibis</p>
+                      <a target="_blank" href="https://steibinger-dorfmarkt.de">steibinger-dorfmarkt.de</a>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- BEAUTY, OPTIK & SCHMUCK -->
+          <div class="header bg-tomato">
+              <h5>BEAUTY, OPTIK & SCHMUCK</h5>
+          </div>
+      
+          <div class="shop-box-container">
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">1</h5>
+                  <div class="content">
+                      <p>Drogeriemarkt Müller <br> Hugo-von-Königseggstr. 18</p>
+                      <a target="_blank" href="https://mueller.de">mueller.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">2</h5>
+                  <div class="content">
+                      <p>Flair Schmuck-Kreationen <br> Rainwaldstraße 3</p>
+                      <a target="_blank" href="https://jmschmuck.de">jmschmuck.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">3</h5>
+                  <div class="content">
+                      <p>Juwelier Hollfelder <br>Lindauerstraße 14</p>
+                      <a target="_blank" href="https://hollfelder.de">hollfelder.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">4</h5>
+                  <div class="content">
+                      <p>Juwelier Köhler <br>Bahnhofstraße 5</p>
+                      <a target="_blank" href="https://juwelier-koehler.de">juwelier-koehler.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">5</h5>
+                  <div class="content">
+                      <p>Kiefer's Edelsteinschmuck <br>Schloßstraße 7</p>
+                      <a target="_blank" href="https://kiefer-schmuck.com">kiefer-schmuck.com</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">6</h5>
+                  <div class="content">
+                      <p>Luis G.F. <br>Lindauer Straße 12</p>
+                      <a target="_blank" href="https://louis-gf.de">louis-gf.de</a>
+                  </div>
+              </div>
+      
+              <div class="legendeinfo">
+                  <h5 class="number bg-tomato">7</h5>
+                  <div class="content">
+                      <p>Parfümerie Bingger <br>Lindauer Straße 24</p>
+                      <a target="_blank" href="https://bingger.de">bingger.de</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        
+      <div class="box">
+        <div class="header bg-cyan">
+          <h5>EINRICHTEN& WOHNEN</h5>
+        </div>
+      
+        <div id="shop71" class="legendeinfo">
+          <h5 class="number bg-cyan">1</h5>
+          <div class="content">
+            <p>Allgäuer Parkettzentrale Bauer <br> Buflings 12, Buflings</p>
+            <a target="_blank" href="http://apz-bauer.com" target="_blank">apz-bauer.com</a>
+          </div>
+        </div>
+      
+        <div id="shop72" class="legendeinfo">
+          <h5 class="number bg-cyan">2</h5>
+          <div class="content">
+            <p>Fink im Haus <br> Salmas 33, Thalkirchdorf</p>
+          </div>
+        </div>
+      
+        <div id="shop73" class="legendeinfo">
+          <h5 class="number bg-cyan">3</h5>
+          <div class="content">
+            <p>Häusler Raum & Dekoration <br>Mühlenstraße 2, Steibis</p>
+          </div>
+        </div>
+      
+        <div id="shop74" class="legendeinfo">
+          <h5 class="number bg-cyan">4</h5>
+          <div class="content">
+            <p>heim-holzhandwerk <br>Schloßstraße 6</p>
+            <a target="_blank" href="http://heim-holzhandwerk.de" target="_blank">heim-holzhandwerk.de</a>
+          </div>
+        </div>
+      
+        <div id="shop75" class="legendeinfo">
+          <h5 class="number bg-cyan">5</h5>
+          <div class="content">
+            <p>Köllmayer <br>Kirchplatz 12</p>
+            <a target="_blank" href="http://koellmayer.de" target="_blank">koellmayer.de</a>
+          </div>
+        </div>
+      
+        <div id="shop76" class="legendeinfo">
+          <h5 class="number bg-cyan">6</h5>
+          <div class="content">
+            <p>Martina Fink Interieur <br>Kirchpatz 4</p>
+            <a target="_blank" href="http://fink-interieur.de" target="_blank">fink-interieur.de</a>
+          </div>
+        </div>
+      
+        <div id="shop77" class="legendeinfo">
+          <h5 class="number bg-cyan">7</h5>
+          <div class="content">
+            <p>Schreinerei Demmler <br>Hugo-von-Königsegg-Str. 6</p>
+            <a target="_blank" href="http://schreinerei-demmler.de" target="_blank">schreinerei-demmler.de</a>
+          </div>
+        </div>
+      
+        <div id="shop78" class="legendeinfo">
+          <h5 class="number bg-cyan">8</h5>
+          <div class="content">
+            <p>Strøm bergs <br>Nordic StyleLindauer Straße 11</p>
+            <a target="_blank" href="http://stroembergs.com" target="_blank">stroembergs.com</a>
+          </div>
+        </div>
+      
+        <div class="header bg-purple">
+          <h5>RESTAURANT, BAR & CAFÉ</h5>
+        </div>
+      
+        <div id="shop79" class="legendeinfo">
+          <h5 class="number bg-purple">1</h5>
+          <div class="content">
+            <p>Adler Hotel-Restaurant <br>Kirchplatz 6</p>
+            <a target="_blank" href="http://adler-oberstaufen.de" target="_blank">adler-oberstaufen.de</a>
+          </div>
+        </div>
+      
+        <div id="shop80" class="legendeinfo">
+          <h5 class="number bg-purple">2</h5>
+          <div class="content">
+            <p>Alessandro Rizzardini Eislädle <br>Hugo-von-Königseggstr. 1</p>
+            <a target="_blank" href="tel:+083867252">08386 7252</a>
+          </div>
+        </div>
+      
+        <div id="shop81" class="legendeinfo">
+          <h5 class="number bg-purple">3</h5>
+          <div class="content">
+            <p>Allgäuer Kräuteralm <br>Bgm.-Wucherer-Straße 15</p>
+            <a target="_blank" href="http://allgaeuer-kraeuteralm.de" target="_blank">allgaeuer-kraeuteralm.de</a>
+          </div>
+        </div>
+      
+        <div id="shop82" class="legendeinfo">
+          <h5 class="number bg-purple">4</h5>
+          <div class="content">
+            <p>Altstaufner Einkehr <br>Bahnhofstraße 4</p>
+            <a target="_blank" href="http://altstaufnereinkehr.de" target="_blank">altstaufnereinkehr.de</a>
+          </div>
+        </div>
+      
+        <div id="shop83" class="legendeinfo">
+          <h5 class="number bg-purple">5</h5>
+          <div class="content">
+            <p>Aquaria Bistro <br>Alpenstraße 5</p>
+            <a target="_blank" href="http://aquaria.de/restaurant" target="_blank">aquaria.de/restaurant</a>
+          </div>
+        </div>
+      
+        <div id="shop84" class="legendeinfo">
+          <h5 class="number bg-purple">6</h5>
+          <div class="content">
+            <p>Aromi Restaurant & Wine Lounge <br>Kalzhofer Straße 4</p>
+            <a target="_blank" href="http://aromi-oberstaufen.de" target="_blank">aromi-oberstaufen.de</a>
+          </div>
+        </div>
+      
+        <div id="shop85" class="legendeinfo">
+          <h5 class="number bg-purple">7</h5>
+          <div class="content">
+            <p>Bahnhofs-Bäck <br>Bahnhofsplatz 3</p>
+          </div>
+        </div>
+      
+        <div id="shop86" class="legendeinfo">
+          <h5 class="number bg-purple">8</h5>
+          <div class="content">
+            <p>Bäckerei Schwarz <br>Lindauer Straße 10</p>
+            <a target="_blank" href="http://brotrebellen.com" target="_blank">brotrebellen.com</a>
+          </div>
+        </div>
+      
+        <div id="shop87" class="legendeinfo">
+          <h5 class="number bg-purple">9</h5>
+          <div class="content">
+            <p>Berggasthof Auwinkel <br>In der Au 6, Steibis</p>
+            <a target="_blank" href="tel:+083868303">08386/8303</a>
+          </div>
+        </div>
+      
+        <div id="shop88" class="legendeinfo">
+          <h5 class="number bg-purple">10</h5>
+          <div class="content">
+            <p>Berghüs Schratt <br>Sägmühle 19, Steibis</p>
+            <a target="_blank" href="http://Biohotel-Schratt.de" target="_blank">Biohotel-Schratt.de</a>
+          </div>
+        </div>
+      
+        <div id="shop89" class="legendeinfo">
+          <h5 class="number bg-purple">11</h5>
+          <div class="content">
+            <p>Bistro Ali Baba <br>Bahnhofstraße 7</p>
+            <a target="_blank" href="tel:+083869918080">08386 9918 080</a>
+          </div>
+        </div>
+      
+        <div id="shop90" class="legendeinfo">
+          <h5 class="number bg-purple">12</h5>
+          <div class="content">
+            <p>Café am Paradies <br>Berg 8</p>
+            <a target="_blank" href="http://berghof-am-paradies.de" target="_blank">berghof-am-paradies.de</a>
+          </div>
+        </div>
+      
+        <div id="shop91" class="legendeinfo">
+          <h5 class="number bg-purple">13</h5>
+          <div class="content">
+            <p>Café Blaues Haus <br>Freibadweg 2</p>
+            <a target="_blank" href="tel:+083864476">08386 4476</a>
+          </div>
+        </div>
+      
+        <div id="shop92" class="legendeinfo">
+          <h5 class="number bg-purple">14</h5>
+          <div class="content">
+            <p>Café Gems <br>Hauptstraße 13</p>
+            <a target="_blank" href="tel:+083862272">08386 2272</a>
+          </div>
+        </div>
+      </div>
+      
+
+      </div>
+
+    </div>
+
+    <div class="d-map-box">
+
+      <div class="d-map-box-inner">
+        <div class="box">
+  
+          <div id="shop94" class="legendeinfo">
+            <h5 class="number bg-purple">16</h5>
+            <div class="content">
+              <p>Café Mühle <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://die-cafe-muehle.de" target="_blank">die-cafe-muehle.de</a>
+            </div>
+          </div>
+          
+          <div id="shop95" class="legendeinfo">
+            <h5 class="number bg-purple">17</h5>
+            <div class="content">
+              <p>Café Viventus <br>Lindauer Straße 20</p>
+              <a target="_blank" href="tel:+083869697137">08386 9697137</a>
+            </div>
+          </div>
+          
+          <div id="shop96" class="legendeinfo">
+            <h5 class="number bg-purple">18</h5>
+            <div class="content">
+              <p>Café & Feinbäckerei Zendler <br>Hugo-von-Königseggstr. 12</p>
+              <a target="_blank" href="http://cafe-zendler.de" target="_blank">cafe-zendler.de</a>
+            </div>
+          </div>
+          
+          <div id="shop97" class="legendeinfo">
+            <h5 class="number bg-purple">19</h5>
+            <div class="content">
+              <p>City Kebap <br>Bahnhofsplatz 1</p>
+              <a target="_blank" href="tel:+083863262143" target="_blank">08386 3262 143</a>
+            </div>
+          </div>
+          
+          <div id="shop98" class="legendeinfo">
+            <h5 class="number bg-purple">20</h5>
+            <div class="content">
+              <p>Clubrestaurant s'Hochgradig <br>In der Au 5, Steibis</p>
+              <a target="_blank" href="tel:+01749219547">0174 9219547</a>
+            </div>
+          </div>
+  
+          <div id="shop99" class="legendeinfo">
+            <h5 class="number bg-purple">21</h5>
+            <div class="content">
+              <p>Der Birkenhof <br>Am Anger 30, Steibis</p>
+              <a target="_blank" href="http://birkenhof-oberstaufen.de">birkenhof-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop100" class="legendeinfo">
+            <h5 class="number bg-purple">22</h5>
+            <div class="content">
+              <p>Die Café Mühle <br>Lindauer Straße 26</p>
+              <a target="_blank" href="tel:+083869802420">08386 9802 420</a>
+            </div>
+          </div>
+  
+          <div id="shop101" class="legendeinfo">
+            <h5 class="number bg-purple">23</h5>
+            <div class="content">
+              <p>Dorfhaus Thalkirchdorf <br>Kirchdorfer Str. 5, Thalkirchdorf</p>
+              <a target="_blank" href="http://dorfhaus.de/">dorfhaus.de/</a>
+            </div>
+          </div>
+  
+          <div id="shop102" class="legendeinfo">
+            <h5 class="number bg-purple">24</h5>
+            <div class="content">
+              <p>Dorfmarkt Steibis <br>Im Dorf 36, Steibis</p>
+              <a target="_blank" href="tel:+083869626755">08386 9626755</a>
+            </div>
+          </div>
+  
+          <div id="shop103" class="legendeinfo">
+            <h5 class="number bg-purple">25</h5>
+            <div class="content">
+              <p>Esslust <br>Kalzhofer Straße 25</p>
+              <a target="_blank" href="http://hotel-alpenkoenig.de">hotel-alpenkoenig.de</a>
+            </div>
+          </div>
+  
+          <div id="shop104" class="legendeinfo">
+            <h5 class="number bg-purple">26</h5>
+            <div class="content">
+              <p>Goldenes Kreuz <br>Im Dorf 25,  Steibis</p>
+              <a target="_blank" href="http://urlaub-steibis.de">urlaub-steibis.de</a>
+              <a target="_blank" href="tel:+083868232">08386 8232</a>
+            </div>
+          </div>
+  
+          <div id="shop105" class="legendeinfo">
+            <h5 class="number bg-purple">27</h5>
+            <div class="content">
+              <p>Hotel-Restaurant Bad Rain <br>Hinterstaufen 9, Thalkirchdorf</p>
+              <a target="_blank" href="http://bad-rain.de">bad-rain.de</a>
+            </div>
+          </div>
+  
+          <div id="shop106" class="legendeinfo">
+            <h5 class="number bg-purple">28</h5>
+            <div class="content">
+              <p>Hotel Restaurant Dein Engel <br>Buflings 3, Buflings</p>
+              <a target="_blank" href="http://deinengel.de">deinengel.de</a>
+            </div>
+          </div>
+  
+          <div id="shop107" class="legendeinfo">
+            <h5 class="number bg-purple">29</h5>
+            <div class="content">
+              <p>Hündle-Stuben <br>Hinterstaufen 10</p>
+              <a target="_blank" href="http://huendle.de">huendle.de</a>
+            </div>
+          </div>
+  
+          <div id="shop108" class="legendeinfo">
+            <h5 class="number bg-purple">30</h5>
+            <div class="content">
+              <p>Landbäckerei Sinz <br>Hugo-von-Königseggstr. 14</p>
+              <a target="_blank" href="http://landbaeckerei-sinz.de">landbaeckerei-sinz.de</a>
+            </div>
+          </div>
+  
+          <div id="shop109" class="legendeinfo">
+            <h5 class="number bg-purple">31</h5>
+            <div class="content">
+              <p>Landhotel Alte Post <br>Lamprechts 3, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083253759975">08325 375 99 75</a>
+            </div>
+          </div>
+  
+          <div id="shop110" class="legendeinfo">
+            <h5 class="number bg-purple">32</h5>
+            <div class="content">
+              <p>Lindner Parkrestaurant <br>Argenstraße 1</p>
+              <a target="_blank" href="http://lindner.de/oberstaufen">lindner.de/oberstaufen</a>
+            </div>
+          </div>
+  
+          <div id="shop111" class="legendeinfo">
+            <h5 class="number bg-purple">33</h5>
+            <div class="content">
+              <p>Nagelfluhlounge <br>Argenstraße 3</p>
+              <a target="_blank" href="tel:+083869300443">08386 9300443</a>
+            </div>
+          </div>
+  
+          <div id="shop112" class="legendeinfo">
+            <h5 class="number bg-purple">34</h5>
+            <div class="content">
+              <p>Platzhirsch The Boutique Hotel and Cafe <br>Kapfweg 7</p>
+              <a target="_blank" href="http://boutiquehotel-platzhirsch.de">boutiquehotel-platzhirsch.de</a>
+            </div>
+          </div>
+  
+          <div id="shop113" class="legendeinfo">
+            <h5 class="number bg-purple">35</h5>
+            <div class="content">
+              <p>Restaurant Beim Schweitzer <br>Auf der Höh 1</p>
+              <a target="_blank" href="tel:+083862530">08386 2530</a>
+            </div>
+          </div>
+  
+          <div id="shop114" class="legendeinfo">
+            <h5 class="number bg-purple">36</h5>
+            <div class="content">
+              <p>Restaurant Gemse <br>Rainwaldstraße 3/EG</p>
+              <a target="_blank" href="tel:+01738692734">0173 8692734</a>
+            </div>
+          </div>
+  
+          <div id="shop115" class="legendeinfo">
+            <h5 class="number bg-purple">37</h5>
+            <div class="content">
+              <p>Restaurant Hotel Traube <br>Kirchdorfer Str. 12, Thalkirchdorf</p>
+              <a target="_blank" href="http://traube-thalkirchdorf.de">traube-thalkirchdorf.de</a>
+            </div>
+          </div>
+  
+          <div id="shop116" class="legendeinfo">
+            <h5 class="number bg-purple">38</h5>
+            <div class="content">
+              <p>Pizzeria Limone <br>Paul-Rieder-Straße 2</p>
+              <a target="_blank" href="tel:+08386980272">08386 980 272</a>
+            </div>
+          </div>
+  
+          <div id="shop117" class="legendeinfo">
+            <h5 class="number bg-purple">39</h5>
+            <div class="content">
+              <p>Pizza & Pasta <br>Im Dorf 25, Steibis</p>
+              <a target="_blank" href="tel:+08386991066">08386 991 066</a>
+            </div>
+          </div>
+  
+          <div id="shop118" class="legendeinfo">
+            <h5 class="number bg-purple">40</h5>
+            <div class="content">
+              <p>Ristorante Di Cicco <br>Bahnhofstraße 3</p>
+              <a target="_blank" href="tel:+083869912803">08386 9912 803</a>
+            </div>
+          </div>
+  
+          <div id="shop120" class="legendeinfo">
+            <h5 class="number bg-purple">41</h5>
+            <div class="content">
+              <p>Roma Centro Pizzeria <br>Kirchplatz 3</p>
+              <a target="_blank" href="tel:+08386939954">08386 939 954</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="box">
+  
+          <div id="shop121" class="legendeinfo">
+            <h5 class="number bg-purple">42</h5>
+            <div class="content">
+              <p>Schaubrennerei "Zur Höll" <br>Willis 3, Willis</p>
+              <a target="_blank" href="tel:+083864001">08386 4001</a>
+            </div>
+          </div>
+          
+          <div id="shop122" class="legendeinfo">
+            <h5 class="number bg-purple">43</h5>
+            <div class="content">
+              <p>Schindelberg Restaurant <br>St.-Rochus-Weg 4</p>
+              <a target="_blank" href="tel:+083868184">08386 8184</a>
+            </div>
+          </div>
+          
+          <div id="shop123" class="legendeinfo">
+            <h5 class="number bg-purple">44</h5>
+            <div class="content">
+              <p>Schlemmeria im Moos <br>Birkenweg 3</p>
+              <a target="_blank" href="tel:+083863599954">08386 359 99 54</a>
+            </div>
+          </div>
+          
+          <div id="shop124" class="legendeinfo">
+            <h5 class="number bg-purple">45</h5>
+            <div class="content">
+              <p>Sinswanger Stuben <br>Sinswang 6</p>
+              <a target="_blank" href="tel:+083867471">08386 7471</a>
+            </div>
+          </div>
+          
+          <div id="shop125" class="legendeinfo">
+            <h5 class="number bg-purple">46</h5>
+            <div class="content">
+              <p>Sonne Café Restaurant <br>Lindauer Straße 2</p>
+              <a target="_blank" href="tel:+083864466">08386 4466</a>
+            </div>
+          </div>
+  
+          <div id="shop126" class="legendeinfo">
+            <h5 class="number bg-purple">47</h5>
+            <div class="content">
+              <p>Sonnenstüble <br>Meerau 10, Kalzhofen</p>
+              <a target="_blank" href="tel:+083861504">08386 1504</a>
+            </div>
+          </div>
+  
+          <div id="shop127" class="legendeinfo">
+            <h5 class="number bg-purple">48</h5>
+            <div class="content">
+              <p>Soravia Eiscafe <br>Hugo-von-Königseggstr. 16</p>
+              <a target="_blank" href="http://allgaeuer-eismanufaktur.de">allgaeuer-eismanufaktur.de</a>
+            </div>
+          </div>
+  
+          <div id="shop128" class="legendeinfo">
+            <h5 class="number bg-purple">49</h5>
+            <div class="content">
+              <p>Stadlers - Hotel Bayerischer Hof <br>Hochgratstraße 2</p>
+              <a target="_blank" href="tel:+083864950">08386 4950</a>
+            </div>
+          </div>
+  
+          <div id="shop129" class="legendeinfo">
+            <h5 class="number bg-purple">50</h5>
+            <div class="content">
+              <p>Starennest <br>Fluhstraße 14, Steibis</p>
+              <a target="_blank" href="tel:+08386939360">08386 939 360</a>
+            </div>
+          </div>
+  
+          <div id="shop130" class="legendeinfo">
+            <h5 class="number bg-purple">51</h5>
+            <div class="content">
+              <p>St. Ullr <br> Im Dorf 38, Steibis</p>
+              <a target="_blank" href="tel:+083868401">08386 8401</a>
+            </div>
+          </div>
+  
+          <div id="shop131" class="legendeinfo">
+            <h5 class="number bg-purple">52</h5>
+            <div class="content">
+              <p>s'Webstüble <br>Salzstraße 7 - 11, Thalkirchdorf</p>
+              <a target="_blank" href="http://allgaeuer-teppichmanufak-tur.de/webstueble">allgaeuer-teppichmanufak-tur.de/webstueble</a>
+            </div>
+          </div>
+  
+          <div id="shop132" class="legendeinfo">
+            <h5 class="number bg-purple">53</h5>
+            <div class="content">
+              <p>Taverna Kreta <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://kreta-oberstaufen.de">kreta-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop133" class="legendeinfo">
+            <h5 class="number bg-purple">54</h5>
+            <div class="content">
+              <p>Trattoria Mediterraneo <br>Schloßstraße 2a</p>
+              <a target="_blank" href="http://mediterraneo-oberstaufen.de">mediterraneo-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop134" class="legendeinfo">
+            <h5 class="number bg-purple">55</h5>
+            <div class="content">
+              <p>Weißachforelle <br>Mühlenstraße 1</p>
+              <a target="_blank" href="tel:+083862731">08386 2731</a>
+            </div>
+          </div>
+  
+          <div id="shop135" class="legendeinfo">
+            <h5 class="number bg-purple">56</h5>
+            <div class="content">
+              <p>Weissachmühle <br>Mühlenstraße 15</p>
+              <a target="_blank" href="http://weissachmuehle.de">weissachmuehle.de</a>
+            </div>
+          </div>
+  
+          <div id="shop136" class="legendeinfo">
+            <h5 class="number bg-purple">57</h5>
+            <div class="content">
+              <p>Wirtshaus beim Strumpfar <br>Kalzhoferstraße 14</p>
+              <a target="_blank" href="tel:+083869627170">08386 9627 170</a>
+            </div>
+          </div>
+  
+          <div id="shop137" class="legendeinfo">
+            <h5 class="number bg-purple">58</h5>
+            <div class="content">
+              <p>Wirtshaus zum Kesslar <br>Lindauer Straße 1 </p>
+              <a target="_blank" href="tel:+083863262095">08386 3262095</a>
+            </div>
+          </div>
+  
+          <div id="shop138" class="legendeinfo">
+            <h5 class="number bg-purple">59</h5>
+            <div class="content">
+              <p>Zur Alten Salzstraße <br>Salzstraße 36, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083259279233">08325 9279233</a>
+            </div>
+          </div>
+  
+          <div class="header bg-pink">
+            <h5>AUSGEHEN</h5>
+          </div>
+  
+          <div id="shop139" class="legendeinfo">
+            <h5 class="number bg-pink">1</h5>
+            <div class="content">
+              <p>Alpe Mohr <br>Kalzhofen 3</p>
+              <a target="_blank" href="tel:+01717595081">0171 7595081</a>
+            </div>
+          </div>
+  
+          <div id="shop140" class="legendeinfo">
+            <h5 class="number bg-pink">2</h5>
+            <div class="content">
+              <p>Allgäu Treff <br>Bahnhofstraße 7</p>
+              <a target="_blank" href="tel:+01717595081">0177 1621 787</a>
+            </div>
+          </div>
+  
+          <div id="shop141" class="legendeinfo">
+            <h5 class="number bg-pink">3</h5>
+            <div class="content">
+              <p>Apostl Tanzlokal <br>Bahnhofsplatz 2</p>
+              <a target="_blank" href="http://apostl.de">apostl.de</a>
+            </div>
+          </div>
+  
+          <div id="shop142" class="legendeinfo">
+            <h5 class="number bg-pink">4</h5>
+            <div class="content">
+              <p>Auszeit <br>Bar BistroLindauer Straße 25</p>
+              <a target="_blank" href="http://auszeit-oberstaufen.com">auszeit-oberstaufen.com</a>
+            </div>
+          </div>
+  
+          <div id="shop143" class="legendeinfo">
+            <h5 class="number bg-pink">5</h5>
+            <div class="content">
+              <p>Blockhütte <br>Willis 2, Willis</p>
+              <a target="_blank" href="tel:+083861240">08386 1240</a>
+            </div>
+          </div>
+  
+          <div id="shop144" class="legendeinfo">
+            <h5 class="number bg-pink">6</h5>
+            <div class="content">
+              <p>Bubis Bar <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://bubisbar-oberstaufen.de">bubisbar-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop145" class="legendeinfo">
+            <h5 class="number bg-pink">7</h5>
+            <div class="content">
+              <p>Café Ponyhof <br>Hinterhalden 9</p>
+              <a target="_blank" href="tel:+083862250">08386 2250</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="box">
+  
+          <div id="shop146" class="legendeinfo">
+            <h5 class="number bg-pink">8</h5>
+            <div class="content">
+              <p>Genussraum Schönherr <br>Kalzhofer Straße 1</p>
+              <a target="_blank" href="http://genussraumschoenherr.de">genussraumschoenherr.de</a>
+            </div>
+          </div>
+  
+          <div id="shop147" class="legendeinfo">
+            <h5 class="number bg-pink">9</h5>
+            <div class="content">
+              <p>GLOBUS <br> Bar Lounge Restaurant <br>Immenstädter Straße 4</p>
+              <a target="_blank" href="http://globus-oberstaufen.de">globus-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop148" class="legendeinfo">
+            <h5 class="number bg-pink">10</h5>
+            <div class="content">
+              <p>HansiBAR/Resort Bergkristall <br>Willis 8, Willis</p>
+              <a target="_blank" href="tel:+083869110">08386 911-0</a>
+            </div>
+          </div>
+  
+          <div id="shop149" class="legendeinfo">
+            <h5 class="number bg-pink">11</h5>
+            <div class="content">
+              <p>Königlich Bayerische Enzianhütte <br>Mühlenstraße 24, Weissach</p>
+              <a target="_blank" href="tel:+08386661">08386 661</a>
+            </div>
+          </div>
+  
+          <div id="shop150" class="legendeinfo">
+            <h5 class="number bg-pink">12</h5>
+            <div class="content">
+              <p>Musikalm Steibis <br>In der Au 9, Steibis</p>
+              <a target="_blank" href="tel:+08386980539">08386 980539</a>
+            </div>
+          </div>
+  
+          <div id="shop151" class="legendeinfo">
+            <h5 class="number bg-pink">13</h5>
+            <div class="content">
+              <p>Restaurant Apost'l Alm <br>Bahnhofsplatz 2</p>
+              <a target="_blank" href="tel:+08386969637">08386 969637</a>
+            </div>
+          </div>
+  
+          <div id="shop152" class="legendeinfo">
+            <h5 class="number bg-pink">14</h5>
+            <div class="content">
+              <p>S’Älple <br>Kirchplatz 6</p>
+              <a target="_blank" href="tel:+08338693210">08338 693210</a>
+            </div>
+          </div>
+  
+          <div id="shop153" class="legendeinfo">
+            <h5 class="number bg-pink">15</h5>
+            <div class="content">
+              <p>Scenetreffbyfranco <br>Am Seelesgraben 8</p>
+              <a target="_blank" href="tel:+015157281158">0151 57281158</a>
+            </div>
+          </div>
+  
+          <div id="shop154" class="legendeinfo">
+            <h5 class="number bg-pink">16</h5>
+            <div class="content">
+              <p>Servus Club <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="tel:+083869805760">08386 9805 760</a>
+            </div>
+          </div>
+  
+          <div id="shop155" class="legendeinfo">
+            <h5 class="number bg-pink">17</h5>
+            <div class="content">
+              <p>Staufner Stub'n im Hotel Tyrol <br>Am Kühlen Grund 1</p>
+              <a target="_blank" href="http://hotel-tyrol-oberstaufen.de">hotel-tyrol-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop156" class="legendeinfo">
+            <h5 class="number bg-pink">18</h5>
+            <div class="content">
+              <p>Stießbergstüble <br> Stießberg 1</p>
+              <a target="_blank" href="http://allgaeu-sonne.de">allgaeu-sonne.de</a>
+            </div>
+          </div>
+  
+          <div id="shop157" class="legendeinfo">
+            <h5 class="number bg-pink">19</h5>
+            <div class="content">
+              <p>Südpunkt Clublounge <br>Rothenfelsstraße 1</p>
+              <a target="_blank" href="tel:+083869803556">08386 9803 556</a>
+            </div>
+          </div>
+  
+          <div id="shop158" class="legendeinfo">
+            <h5 class="number bg-pink">20</h5>
+            <div class="content">
+              <p>Zum Armen Holdi <br>Jahnstraße 5</p>
+              <a target="_blank" href="tel:+083862949">08386 2949</a>
+            </div>
+          </div>
+  
+          <div id="shop159" class="legendeinfo">
+            <h5 class="number bg-pink">21</h5>
+            <div class="content">
+              <p>Zum Goißgässle Gaststätte <br>Lindauer Straße 6</p>
+              <a target="_blank" href="tel:+083861577">08386 1577</a>
+            </div>
+          </div>
+          
+          <div class="header bg-yellow text-dark">
+            <h5>GESUNDHEIT</h5>
+          </div>
+  
+          <div id="shop160" class="legendeinfo">
+            <h5 class="number bg-yellow text-dark">1</h5>
+            <div class="content">
+              <p>Reformhaus Bingger <br>Lindauer Straße 17</p>
+              <a target="_blank" href="http://bingger.de/reformhaus">bingger.de/reformhaus</a>
+            </div>
+          </div>
+  
+          <div id="shop161" class="legendeinfo">
+            <h5 class="number bg-yellow text-dark">2</h5>
+            <div class="content">
+              <p>Staufner Apotheke <br>Hugo-von-Königseggstr. 4</p>
+              <a target="_blank" href="http://staufner-apotheke.de">staufner-apotheke.de</a>
+            </div>
+          </div>
+  
+          <div class="header bg-blue">
+            <h5>SONSTIGE</h5>
+          </div>
+  
+          <div id="shop162" class="legendeinfo">
+            <h5 class="number bg-blue">1</h5>
+            <div class="content">
+              <p>Bürobedarf Mohr <br>Max-Ostheimer-Str. 2</p>
+              <a target="_blank" href="tel:+083861027">08386 1027</a>
+            </div>
+          </div>
+  
+          <div id="shop163" class="legendeinfo">
+            <h5 class="number bg-blue">2</h5>
+            <div class="content">
+              <p>Micktecalles für ihre Kommunikation <br>Lindauer Straße 26</p>
+              <a href="https://micktec.de">micktec.de</a>
+            </div>
+          </div>
+  
+          <div id="shop164" class="legendeinfo">
+            <h5 class="number bg-blue">3</h5>
+            <div class="content">
+              <p>Pfötchen Shop <br>Kirchplatz 14</p>
+              <a target="_blank" href="tel:+083863829882">08386 3829882</a>
+            </div>
+          </div>
+  
+          <div id="shop165" class="legendeinfo">
+            <h5 class="number bg-blue">4</h5>
+            <div class="content">
+              <p>Schwärzler Schliesssysteme <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://schwaerzler-schliesssysteme.de">schwaerzler-schliesssysteme.de</a>
+            </div>
+          </div>
+          
+          <div class="qr-code">
+            <img src="qr-img.png" alt="">
+            <a target="_blank" href="https://meinoberstaufen.de/">meinoberstaufen.de</a>
+          </div>
+  
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<div class="centeral">
+  <div class="d-map-boxes d-map-responsive">
+    <div class="d-map-box">
+      <div class="d-map-box-inner">
+        <div class="box">
+          <div class="header bg-skyblue">
+            <h5>MODE, SCHUHE & SPORT</h5>
+          </div>
+  
+          <div id="shop1" class="legendeinfo">
+            <h5 class="number bg-skyblue">1</h5>
+            <div class="content">
+              <p>Bienenkorb Lifestyle <br>Kirchplatz 16</p>
+              <a target="_blank" href="http://bienenkorb-lifestyle.de">bienenkorb-lifestyle.de</a>
+            </div>
+          </div>
+          
+          <div id="shop2" class="legendeinfo">
+            <h5 class="number bg-skyblue">2</h5>
+            <div class="content">
+              <p>Boutique Ma-Vie <br>Hugo-von-Königseggstr. 14</p>
+              <a target="_blank" href="http://boutique-ma-vie.de">boutique-ma-vie.de</a>
+            </div>
+          </div>
+          
+          <div id="shop3" class="legendeinfo">
+            <h5 class="number bg-skyblue">3</h5>
+            <div class="content">
+              <p>Caprice Alpengwand Trachten <br> Rainwaldstraße 2</p>
+              <a target="_blank" href="http://caprice-trachten.de">caprice-trachten.de</a>
+            </div>
+          </div>
+          
+          <div id="shop4" class="legendeinfo">
+            <h5 class="number bg-skyblue">4</h5>
+            <div class="content">
+              <p>Curvy Mode <br>Hugo-von-Köngisegg-Str 16</p>
+            </div>
+          </div>
+          
+          <div id="shop5" class="legendeinfo">
+            <h5 class="number bg-skyblue">5</h5>
+            <div class="content">
+              <p>émilia Mode <br>Rothenfelsstraße 6</p>
+              <a target="_blank" href="http://emiliamode.com">emiliamode.com</a>
+            </div>
+          </div>
+          
+          <div id="shop6" class="legendeinfo">
+            <h5 class="number bg-skyblue">6</h5>
+            <div class="content">
+              <p>Felbinger Damenausstatter und Aigner Shop <br>Schloßstraße 2</p>
+              <a target="_blank" href="http://felbinger-damenausstatter.de">felbinger-damenausstatter.de</a>
+            </div>
+          </div>
+          
+          <div id="shop7" class="legendeinfo">
+            <h5 class="number bg-skyblue">7</h5>
+            <div class="content">
+              <p>Gelis Tracht <br>Johann-Schroth-Straße 2</p>
+              <a target="_blank" href="tel:+083867742">08386 7742</a>
+            </div>
+          </div>
+          
+          <div id="shop8" class="legendeinfo">
+            <h5 class="number bg-skyblue">8</h5>
+            <div class="content">
+              <p>Golfzentrum Oberstaufen <br>Buflings 1a, Buflings</p>
+              <a target="_blank" href="http://golfzentrum-oberstaufen.de">golfzentrum-oberstaufen.de</a>
+            </div>
+          </div>
+          
+          <div id="shop9" class="legendeinfo">
+            <h5 class="number bg-skyblue">9a</h5>
+            <div class="content">
+              <p>Hagspiel Moden <br>Schlossstraße 5</p>
+              <a target="_blank" href="http://hagspiel-moden.de">hagspiel-moden.de</a>
+            </div>
+          </div>
+
+          <div id="shop10" class="legendeinfo">
+            <h5 class="number bg-skyblue">9b</h5>
+            <div class="content">
+              <p>Hagspiel Moden Männer <br>Schloßstraße  7</p>
+              <a target="_blank" href="tel:+01745846361">0174 5846361</a>
+            </div>
+          </div>
+          
+          <div id="shop11" class="legendeinfo">
+            <h5 class="number bg-skyblue">10</h5>
+            <div class="content">
+              <p>Häusler Modepunkt <br>Bahnhofstraße 11</p>
+              <a target="_blank" href="http://modepunkt.de">modepunkt.de</a>
+            </div>
+          </div>
+          
+          <div id="shop12" class="legendeinfo">
+            <h5 class="number bg-skyblue">11</h5>
+            <div class="content">
+              <p>Hubert Pflug Schuh-moden & Accessoires <br>Bahnhofstraße 4a</p>
+              <a target="_blank" href="http://hubert-pflug.de">hubert-pflug.de</a>
+            </div>
+          </div>
+          
+          <div id="shop13" class="legendeinfo">
+            <h5 class="number bg-skyblue">12</h5>
+            <div class="content">
+              <p>Kaulberg Badeshop <br>Rainwaldstraße 3</p>
+              <a target="_blank" href="http://kaulberg.de">kaulberg.de</a>
+            </div>
+          </div>
+          
+          <div id="shop14" class="legendeinfo">
+            <h5 class="number bg-skyblue">13</h5>
+            <div class="content">
+              <p>Meine Größe <br>Bahnhofstraße 11</p>
+              <a target="_blank" href="tel:+083869915196">08386 9915 196</a>
+            </div>
+          </div>
+          
+          <div id="shop15" class="legendeinfo">
+            <h5 class="number bg-skyblue">14</h5>
+            <div class="content">
+              <p>LAND-HAUS Trachten <br>Rainwaldstraße 3</p>
+              <a target="_blank" href="http://trachten-landhaus.de">trachten-landhaus.de</a>
+            </div>
+          </div>
+          
+          <div id="shop16" class="legendeinfo">
+            <h5 class="number bg-skyblue">15</h5>
+            <div class="content">
+              <p>Mode Kundruweit <br>Schloßstraße 12</p>
+              <a target="_blank" href="http://kundruweit.de">kundruweit.de</a>
+            </div>
+          </div>
+          
+          <div id="shop17" class="legendeinfo">
+            <h5 class="number bg-skyblue">16</h5>
+            <div class="content">
+              <p>Modewerk OberstaufenOutlet für Sport & Mode <br>Bahnhofsplatz 3</p>
+              <a target="_blank" href="http://modewerk-outlet.de">modewerk-outlet.de</a>
+            </div>
+          </div>
+          
+          <div id="shop18" class="legendeinfo">
+            <h5 class="number bg-skyblue">17</h5>
+            <div class="content">
+              <p>mode-eck Helga <br>Schloßstraße 10</p>
+              <a target="_blank" href="tel:+08386328">08386 328</a>
+            </div>
+          </div>
+          
+          <div id="shop19" class="legendeinfo">
+            <h5 class="number bg-skyblue">18</h5>
+            <div class="content">
+              <p>Nina von C. Store <br>Bahnhofstraße 8</p>
+              <a target="_blank" href="tel:+083869802680">08386 9802 680</a>
+            </div>
+          </div>
+  
+          <div id="shop20" class="legendeinfo">
+            <h5 class="number bg-skyblue">19</h5>
+            <div class="content">
+              <p>Obermeyer Modemarkt <br>Gottfried-Resl-Weg 4</p>
+              <a target="_blank" href="http://obermeyer-modemarkt.de">obermeyer-modemarkt.de</a>
+            </div>
+          </div>
+          
+          <div id="shop21" class="legendeinfo">
+            <h5 class="number bg-skyblue">20</h5>
+            <div class="content">
+              <p>Radsport Hermann <br>Bahnhofsplatz 2</p>
+              <a target="_blank" href="http://radcenter-hermann.de">radcenter-hermann.de</a>
+            </div>
+          </div>
+          
+          <div id="shop22" class="legendeinfo">
+            <h5 class="number bg-skyblue">21</h5>
+            <div class="content">
+              <p>RP Moda <br>Bahnhofstraße 6</p>
+              <a target="_blank" href="http://rp-moda.de">rp-moda.de</a>
+            </div>
+          </div>
+          
+          <div id="shop23" class="legendeinfo">
+            <h5 class="number bg-skyblue">22</h5>
+            <div class="content">
+              <p>Schnäppchen Schuh <br>Lindauer Straße 26</p>
+              <a target="_blank" href="http://hubert-pflug.de">hubert-pflug.de</a>
+            </div>
+          </div>
+          
+          <div id="shop24" class="legendeinfo">
+            <h5 class="number bg-skyblue">23</h5>
+            <div class="content">
+              <p>Schuhhaus Kuhn <br>Bahnhofstraße 2</p>
+              <a target="_blank" href="http://schuhhaus-kuhn.de">schuhhaus-kuhn.de</a>
+            </div>
+          </div>
+          
+          <div id="shop25" class="legendeinfo">
+            <h5 class="number bg-skyblue">24</h5>
+            <div class="content">
+              <p>Schuhe wie Barfuß <br>Schloßstraße 10</p>
+              <a target="_blank" href="http://schuhewiebarfuss-ober-staufen.de">schuhewiebarfuss-ober-staufen.de</a>
+            </div>
+          </div>
+          
+          <div id="shop26" class="legendeinfo">
+            <h5 class="number bg-skyblue">25</h5>
+            <div class="content">
+              <p>Schuh-Mann <br>Bahnhofstraße 6</p>
+              <a target="_blank" href="tel:+08386939254">08386 939254</a>
+            </div>
+          </div>
+          
+          <div id="shop27" class="legendeinfo">
+            <h5 class="number bg-skyblue">26</h5>
+            <div class="content">
+              <p>Sport Hauber E-Bike Shop <br>Kalzhofer Straße 22</p>
+              <a target="_blank" href="http://sport-hauber.de">sport-hauber.de</a>
+            </div>
+          </div>
+          
+          <div id="shop28" class="legendeinfo">
+            <h5 class="number bg-skyblue">27</h5>
+            <div class="content">
+              <p>Sport Hauber Pro Shop <br>In der Au 5, Steibis</p>
+              <a target="_blank" href="http://sport-hauber.de">sport-hauber.de</a><br>
+              <a target="_blank" href="tel:+083868529">08386 8529</a>
+            </div>
+          </div>
+          
+          <div id="shop29" class="legendeinfo">
+            <h5 class="number bg-skyblue">28</h5>
+            <div class="content">
+              <p>Sport Markt <br>Hugo-von-Königseggstr. 11</p>
+              <a target="_blank" href="http://sport-markt.com">sport-markt.com</a>
+            </div>
+          </div>
+
+          <div id="shop30" class="legendeinfo">
+            <h5 class="number bg-skyblue">29</h5>
+            <div class="content">
+              <p>ThoMi Mode+Sport <br>Rothenfelsstraße 7</p>
+              <a target="_blank" href="http://thomi-sports.de">thomi-sports.de</a>
+            </div>
+          </div>
+          
+          <div id="shop31" class="legendeinfo">
+            <h5 class="number bg-skyblue">30</h5>
+            <div class="content">
+              <p>Trachten Strele <br>Rainwaldstraße 1</p>
+              <a target="_blank" href="http://trachtenmoden-strele.de">trachtenmoden-strele.de</a>
+            </div>
+          </div>
+          
+          <div id="shop32" class="legendeinfo">
+            <h5 class="number bg-skyblue">31</h5>
+            <div class="content">
+              <p>Twenty7Shoes <br>Kalzhofer Straße 4</p>
+              <a target="_blank" href="http://twenty7shoes.de">twenty7shoes.de</a>
+            </div>
+          </div>
+          
+          <div id="shop33" class="legendeinfo">
+            <h5 class="number bg-skyblue">32</h5>
+            <div class="content">
+              <p>XL Mode <br>Schloßstraße 24</p>
+              <a target="_blank" href="http://xl-mode.de">xl-mode.de</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="page-image" style="margin-bottom: 10px;">
+        <img src="placeholderimage.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="d-map-box">
+      <div class="d-map-box-inner">
+        <div class="box">
+  
+          <div class="header bg-leaf">
+            <h5>GESCHENKE & ACCESSOIRES</h5>
+          </div>
+          
+          <div id="shop34" class="legendeinfo">
+            <h5 class="number bg-leaf">1</h5>
+            <div class="content">
+              <p>Alte Schmiede <br>Lindauer Straße 19</p>
+              <a target="_blank" href="tel:+01778862625">0177 8862625</a>
+            </div>
+          </div>
+          
+          <div id="shop35" class="legendeinfo">
+            <h5 class="number bg-leaf">2</h5>
+            <div class="content">
+              <p>Antony‘s Kunst & Auktionshaus <br>Kirchplatz 4</p>
+              <a target="_blank" href="http://antonys-auktionshaus.de">antonys-auktionshaus.de</a>
+            </div>
+          </div>
+          
+          <div id="shop36" class="legendeinfo">
+            <h5 class="number bg-leaf">3</h5>
+            <div class="content">
+              <p>Bärbels Schaf- & Fellstube <br>Bahnhofstraße 2b</p>
+              <a target="_blank" href="http://fell-stube.de">fell-stube.de</a>
+            </div>
+          </div>
+          
+          <div id="shop37" class="legendeinfo">
+            <h5 class="number bg-leaf">4</h5>
+            <div class="content">
+              <p>Bücher Edele <br>Hugo-von-Königseggstr. 13</p>
+              <a target="_blank" href="http://edele.de">edele.de</a>
+            </div>
+          </div>
+          
+          <div id="shop38" class="legendeinfo">
+            <h5 class="number bg-leaf">5</h5>
+            <div class="content">
+              <p>Gärtnerei Stehle <br>Hugo-von-Königseggstr. 2</p>
+              <a target="_blank" href="http://gaertnerei-stehle.de">gaertnerei-stehle.de</a>
+            </div>
+          </div>
+          
+          <div id="shop39" class="legendeinfo">
+            <h5 class="number bg-leaf">6</h5>
+            <div class="content">
+              <p>Goods Concept Store <br>Schloßstraße 9</p>
+              <a target="_blank" href="http://goods-conceptstore.de">goods-conceptstore.de</a>
+            </div>
+          </div>
+          
+          <div id="shop40" class="legendeinfo">
+            <h5 class="number bg-leaf">7</h5>
+            <div class="content">
+              <p>Heimatgut Boutique/ Resort Bergkristall <br> Willis 8, Willis</p>
+              <a target="_blank" href="http://bergkristall.de/shop">bergkristall.de/shop</a>
+            </div>
+          </div>
+          
+          <div id="shop41" class="legendeinfo">
+            <h5 class="number bg-leaf">8</h5>
+            <div class="content">
+              <p>Natur Bunt Leben - Laden & Café <br>
+                Säntisweg 9</p>
+              <a target="_blank" href="http://naturbuntleben.de">naturbuntleben.de</a>
+            </div>
+          </div>
+          
+          <div id="shop42" class="legendeinfo">
+            <h5 class="number bg-leaf">9</h5>
+            <div class="content">
+              <p>Martina Fink Interieur <br>
+                Kirchlpatz 4</p>
+              <a target="_blank" href="http://fink-interieur.de">fink-interieur.de</a>
+            </div>
+          </div>
+          
+          <div id="shop43" class="legendeinfo">
+            <h5 class="number bg-leaf">10</h5>
+            <div class="content">
+              <p>Papeterie Mader <br> Kalzhofer Straße 2</p>
+              <a target="_blank" href="tel:+083861800">08386 1800</a>
+            </div>
+          </div>
+          
+          <div id="shop44" class="legendeinfo">
+            <h5 class="number bg-leaf">11</h5>
+            <div class="content">
+              <p>Raucher Boutique Göppel <br> Hugo-von-Königseggstr. 2</p>
+              <a target="_blank" href="http://raucherboutique.de">raucherboutique.de</a>
+            </div>
+          </div>
+          
+          <div id="shop45" class="legendeinfo">
+            <h5 class="number bg-leaf">12</h5>
+            <div class="content">
+              <p>Renate von Ohlen
+                Geschenkideen <br>
+                Schloßstraße 1</p>
+              <a target="_blank" href="tel:+083862826">08386 2826</a>
+            </div>
+          </div>
+          
+          <div id="shop46" class="legendeinfo">
+            <h5 class="number bg-leaf">13</h5>
+            <div class="content">
+              <p>Trend Alm <br> Kirchplatz 2</p>
+              <a target="_blank" href="http://trendalm.de">trendalm.de</a>
+            </div>
+          </div>
+          
+          <div id="shop47" class="legendeinfo">
+            <h5 class="number bg-leaf">14</h5>
+            <div class="content">
+              <p>S i ́Düpfle <br>
+                Am Lohacker 5</p>
+              <a target="_blank" href="tel:+083867060">08386 7060</a>
+            </div>
+          </div>
+          
+          <div class="header bg-gray">
+            <h5>FEINKOST & LEBENSMITTEL</h5>
+          </div>
+          
+          <div id="shop48" class="legendeinfo">
+            <h5 class="number bg-gray">1</h5>
+            <div class="content">
+              <p>Allgäuer Alpenwasser Werksverkauf <br>Salzstraße 52, Wiedemannsdorf</p>
+              <a target="_blank" href="tel:+08325444">08325 444</a>
+            </div>
+          </div>
+          
+          <div id="shop49" class="legendeinfo">
+            <h5 class="number bg-gray">2</h5>
+            <div class="content">
+              <p>Allgäuer Honigladen <br>Rothenfelsstraße 7</p>
+              <a target="_blank" href="tel:+08386980345">08386 980 345</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="box">
+  
+          <div id="shop50" class="legendeinfo">
+            <h5 class="number bg-gray">3</h5>
+            <div class="content">
+              <p>Bäckerei Münzel <br> Kirchplatz 2</p>
+              <a target="_blank" href="http://baeckerei-muenzel.de/">baeckerei-muenzel.de/</a>
+            </div>
+          </div>
+          
+          <div id="shop51" class="legendeinfo">
+            <h5 class="number bg-gray">4</h5>
+            <div class="content">
+              <p>Bergkäserei Steibis <br>Im Dorf 12, Steibis</p>
+              <a target="_blank" href="tel:+083868156">08386 8156</a>
+            </div>
+          </div>
+          
+          <div id="shop52" class="legendeinfo">
+            <h5 class="number bg-gray">5</h5>
+            <div class="content">
+              <p>Dorfladen Dorfhaus <br>Kirchdorfer Straße 5+7, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083259581">08325 9581</a>
+            </div>
+          </div>
+          
+          <div id="shop53" class="legendeinfo">
+            <h5 class="number bg-gray">6</h5>
+            <div class="content">
+              <p>Eva Maria Nussbaumer <br>Lindauer Straße 6</p>
+              <a target="_blank" href="http://fleischundwurstnussbaumer.de">fleischundwurstnussbaumer.de</a>
+            </div>
+          </div>
+          
+          <div id="shop54" class="legendeinfo">
+            <h5 class="number bg-gray">7</h5>
+            <div class="content">
+              <p>Feneberg Oberstaufen <br>Kirchplatz 3</p>
+              <a target="_blank" href="http://feneberg.de">feneberg.de</a>
+            </div>
+          </div>
+          
+          <div id="shop55" class="legendeinfo">
+            <h5 class="number bg-gray">8</h5>
+            <div class="content">
+              <p>Fristo Getränkemarkt <br>Kalzhofer Straße 22</p>
+              <a target="_blank" href="http://antonys-auktionshaus.de">fristo.de</a>
+            </div>
+          </div>
+          
+          <div id="shop56" class="legendeinfo">
+            <h5 class="number bg-gray">9</h5>
+            <div class="content">
+              <p>Genussraum Schönherr Feinkost <br>Lindauerstraße 12</p>
+              <a target="_blank" href="http://genussraum-schoenherr.de">genussraum-schoenherr.de</a>
+            </div>
+          </div>
+          
+          <div id="shop57" class="legendeinfo">
+            <h5 class="number bg-gray">10</h5>
+            <div class="content">
+              <p>Heumilchkäserei Rutzhofen <br>Hugo-von-Königseggstr. 7</p>
+              <a target="_blank" href="http://sennerei-rutzhofen.de">sennerei-rutzhofen.de</a>
+            </div>
+          </div>
+          
+          <div id="shop58" class="legendeinfo">
+            <h5 class="number bg-gray">11</h5>
+            <div class="content">
+              <p>Hofkäserei Nußbaumer <br>Konstanzer Straße 11, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083259230">08325 9230</a>
+            </div>
+          </div>
+          
+          <div id="shop59" class="legendeinfo">
+            <h5 class="number bg-gray">12</h5>
+            <div class="content">
+              <p>Kaufmarkt <br>Kalzhofer Straße 24</p>
+              <a target="_blank" href="http://feneberg.de">feneberg.de</a>
+            </div>
+          </div>
+          
+          <div id="shop60" class="legendeinfo">
+            <h5 class="number bg-gray">13</h5>
+            <div class="content">
+              <p>Norma <br>Lindauer Straße 28</p>
+              <a target="_blank" href="http://norma-online.de">norma-online.de</a>
+            </div>
+          </div>
+          
+          <div id="shop61" class="legendeinfo">
+            <h5 class="number bg-gray">14</h5>
+            <div class="content">
+              <p>Penninger Schnapskabinett <br>Kirchplatz 2</p>
+              <a target="_blank" href="tel:+08386962076">08386 962 076</a>
+            </div>
+          </div>
+          
+          <div id="shop62" class="legendeinfo">
+            <h5 class="number bg-gray">15</h5>
+            <div class="content">
+              <p>Staufner Käs-Kuche <br>Lindauer Straße 6</p>
+              <a target="_blank" href="http://staufner-kaeskuche.de">staufner-kaeskuche.de</a>
+            </div>
+          </div>
+          
+          <div id="shop63" class="legendeinfo">
+            <h5 class="number bg-gray">16</h5>
+            <div class="content">
+              <p>Steibiner Dorfmarkt <br>Im Dorf 36, Steibis</p>
+              <a target="_blank" href="http://steibinger-dorfmarkt.de">steibinger-dorfmarkt.de</a>
+            </div>
+          </div>
+  
+          <div class="header bg-tomato">
+            <h5>BEAUTY, OPTIK& SCHMUCK</h5>
+          </div>
+  
+          <div id="shop64" class="legendeinfo">
+            <h5 class="number bg-tomato">1</h5>
+            <div class="content">
+              <p>Drogeriemarkt Müller <br> Hugo-von-Königseggstr. 18</p>
+              <a target="_blank" href="http://mueller.de">mueller.de</a>
+            </div>
+          </div>
+  
+          <div id="shop65" class="legendeinfo">
+            <h5 class="number bg-tomato">2</h5>
+            <div class="content">
+              <p>Flair
+                Schmuck-Kreationen <br> Rainwaldstraße 3</p>
+              <a target="_blank" href="http://jmschmuck.de">jmschmuck.de</a>
+            </div>
+          </div>
+  
+          <div id="shop66" class="legendeinfo">
+            <h5 class="number bg-tomato">3</h5>
+            <div class="content">
+              <p>Juwelier Hollfelder <br>
+                Lindauerstraße 14</p>
+              <a target="_blank" href="http://hollfelder.de">hollfelder.de</a>
+            </div>
+          </div>
+  
+          <div id="shop67" class="legendeinfo">
+            <h5 class="number bg-tomato">4</h5>
+            <div class="content">
+              <p>Juwelier Köhler <br>
+                Bahnhofstraße 5</p>
+              <a target="_blank" href="http://hollfelder.de">juwelier-koehler.de</a>
+            </div>
+          </div>
+  
+          <div id="shop68" class="legendeinfo">
+            <h5 class="number bg-tomato">5</h5>
+            <div class="content">
+              <p>Kiefer's <br>
+                Edelsteinschmuck Schloßstraße 7</p>
+              <a target="_blank" href="http://kiefer-schmuck.com">kiefer-schmuck.com</a>
+            </div>
+          </div>
+  
+          <div id="shop69" class="legendeinfo">
+            <h5 class="number bg-tomato">6</h5>
+            <div class="content">
+              <p>Luis G.F. <br>
+                Lindauer Straße 12</p>
+              <a target="_blank" href="http://louis-gf.de">louis-gf.de</a>
+            </div>
+          </div>
+  
+          <div id="shop70" class="legendeinfo">
+            <h5 class="number bg-tomato">7</h5>
+            <div class="content">
+              <p>Parfümerie Bingger  <br>Lindauer Straße 24</p>
+              <a target="_blank" href="http://bingger.de">bingger.de</a>
+            </div>
+          </div>
+  
+        </div>
+        
+        <div class="box">
+          <div class="header bg-cyan">
+            <h5>EINRICHTEN& WOHNEN</h5>
+          </div>
+  
+          <div id="shop71" class="legendeinfo">
+            <h5 class="number bg-cyan">1</h5>
+            <div class="content">
+              <p>Allgäuer Parkettzentrale Bauer <br> Buflings 12, Buflings</p>
+              <a target="_blank" href="http://apz-bauer.com">apz-bauer.com</a>
+            </div>
+          </div>
+  
+          <div id="shop72" class="legendeinfo">
+            <h5 class="number bg-cyan">2</h5>
+            <div class="content">
+              <p>Fink im Haus <br> Salmas 33, Thalkirchdorf</p>
+            </div>
+          </div>
+  
+          <div id="shop73" class="legendeinfo">
+            <h5 class="number bg-cyan">3</h5>
+            <div class="content">
+              <p>Häusler Raum & Dekoration <br>Mühlenstraße 2, Steibis</p>
+            </div>
+          </div>
+  
+          <div id="shop74" class="legendeinfo">
+            <h5 class="number bg-cyan">4</h5>
+            <div class="content">
+              <p>heim-holzhandwerk <br>Schloßstraße 6</p>
+              <a target="_blank" href="http://heim-holzhandwerk.de">heim-holzhandwerk.de</a>
+            </div>
+          </div>
+  
+          <div id="shop75" class="legendeinfo">
+            <h5 class="number bg-cyan">5</h5>
+            <div class="content">
+              <p>Köllmayer <br>Kirchplatz 12</p>
+              <a target="_blank" href="http://koellmayer.de">koellmayer.de</a>
+            </div>
+          </div>
+  
+          <div id="shop76" class="legendeinfo">
+            <h5 class="number bg-cyan">6</h5>
+            <div class="content">
+              <p>Martina Fink Interieur <br>Kirchpatz 4</p>
+              <a target="_blank" href="http://fink-interieur.de">fink-interieur.de</a>
+            </div>
+          </div>
+  
+          <div id="shop77" class="legendeinfo">
+            <h5 class="number bg-cyan">7</h5>
+            <div class="content">
+              <p>Schreinerei Demmler <br>Hugo-von-Königsegg-Str. 6</p>
+              <a target="_blank" href="http://schreinerei-demmler.de">schreinerei-demmler.de</a>
+            </div>
+          </div>
+  
+          <div id="shop78" class="legendeinfo">
+            <h5 class="number bg-cyan">8</h5>
+            <div class="content">
+              <p>StrømbergsNordic Style <br>Lindauer Straße 11</p>
+              <a target="_blank" href="http://stroembergs.com">stroembergs.com</a>
+            </div>
+          </div>
+  
+          <div class="header bg-purple">
+            <h5>RESTAURANT, BAR & CAFÉ</h5>
+          </div>
+  
+          <div id="shop79" class="legendeinfo">
+            <h5 class="number bg-purple">1</h5>
+            <div class="content">
+              <p>Adler Hotel-Restaurant <br>Kirchplatz 6</p>
+              <a target="_blank" href="http://adler-oberstaufen.de">adler-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop80" class="legendeinfo">
+            <h5 class="number bg-purple">2</h5>
+            <div class="content">
+              <p>Alessandro Rizzardini Eislädle <br>Hugo-von-Königseggstr. 1</p>
+              <a target="_blank" href="tel:+083867252">08386 7252</a>
+            </div>
+          </div>
+  
+          <div id="shop81" class="legendeinfo">
+            <h5 class="number bg-purple">3</h5>
+            <div class="content">
+              <p>Allgäuer Kräuteralm <br>Bgm.-Wucherer-Straße 15</p>
+              <a target="_blank" href="http://allgaeuer-kraeuteralm.de">allgaeuer-kraeuteralm.de</a>
+            </div>
+          </div>
+  
+          <div id="shop82" class="legendeinfo">
+            <h5 class="number bg-purple">4</h5>
+            <div class="content">
+              <p>Altstaufner Einkehr <br>Bahnhofstraße 4</p>
+              <a target="_blank" href="http://altstaufnereinkehr.de">altstaufnereinkehr.de</a>
+            </div>
+          </div>
+  
+          <div id="shop83" class="legendeinfo">
+            <h5 class="number bg-purple">5</h5>
+            <div class="content">
+              <p>Aquaria Bistro <br>Alpenstraße 5</p>
+              <a target="_blank" href="http://aquaria.de/restaurant">aquaria.de/restaurant</a>
+            </div>
+          </div>
+  
+          <div id="shop84" class="legendeinfo">
+            <h5 class="number bg-purple">6</h5>
+            <div class="content">
+              <p>Aromi Restaurant & Wine Lounge <br>Kalzhofer Straße 4</p>
+              <a target="_blank" href="http://aromi-oberstaufen.de">aromi-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop85" class="legendeinfo">
+            <h5 class="number bg-purple">7</h5>
+            <div class="content">
+              <p>Bahnhofs-Bäck <br>Bahnhofsplatz 3</p>
+            </div>
+          </div>
+  
+          <div id="shop86" class="legendeinfo">
+            <h5 class="number bg-purple">8</h5>
+            <div class="content">
+              <p>Bäckerei Schwarz <br>Lindauer Straße 10</p>
+              <a target="_blank" href="http://brotrebellen.com">brotrebellen.com</a>
+            </div>
+          </div>
+  
+          <div id="shop87" class="legendeinfo">
+            <h5 class="number bg-purple">9</h5>
+            <div class="content">
+              <p>Berggasthof Auwinkel <br>In der Au 6, Steibis</p>
+              <a target="_blank" href="tel:+083868303">08386/8303</a>
+            </div>
+          </div>
+  
+          <div id="shop88" class="legendeinfo">
+            <h5 class="number bg-purple">10</h5>
+            <div class="content">
+              <p>Berghüs Schratt <br>Sägmühle 19, Steibis</p>
+              <a target="_blank" href="http://Biohotel-Schratt.de">Biohotel-Schratt.de</a>
+            </div>
+          </div>
+  
+          <div id="shop89" class="legendeinfo">
+            <h5 class="number bg-purple">11</h5>
+            <div class="content">
+              <p>Bistro Ali Baba <br>Bahnhofstraße 7</p>
+              <a target="_blank" href="tel:+083869918080">08386 9918 080</a>
+            </div>
+          </div>
+  
+          <div id="shop90" class="legendeinfo">
+            <h5 class="number bg-purple">12</h5>
+            <div class="content">
+              <p>Café am Paradies <br>Berg 8</p>
+              <a target="_blank" href="http://berghof-am-paradies.de">berghof-am-paradies.de</a>
+            </div>
+          </div>
+          
+  
+          <div id="shop91" class="legendeinfo">
+            <h5 class="number bg-purple">13</h5>
+            <div class="content">
+              <p>Café Blaues Haus <br>Freibadweg 2</p>
+              <a target="_blank" href="tel:+083864476">08386 4476</a>
+            </div>
+          </div>
+  
+          <div id="shop92" class="legendeinfo">
+            <h5 class="number bg-purple">14</h5>
+            <div class="content">
+              <p>Café Gemsle <br>Rainwaldstraße 3</p>
+              <a target="_blank" href="http://gemsle-oberstaufen.de">gemsle-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop93" class="legendeinfo">
+            <h5 class="number bg-purple">15</h5>
+            <div class="content">
+              <p>Café Lässer <br>Kirchplatz 16</p>
+              <a target="_blank" href="tel:+083862986">08386 2986</a>
+            </div>
+          </div>
+
+          <div id="shop94" class="legendeinfo">
+            <h5 class="number bg-purple">16</h5>
+            <div class="content">
+              <p>Café Mühle <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://die-cafe-muehle.de">die-cafe-muehle.de</a>
+            </div>
+          </div>
+          
+          <div id="shop95" class="legendeinfo">
+            <h5 class="number bg-purple">17</h5>
+            <div class="content">
+              <p>Café Viventus <br>Lindauer Straße 20</p>
+              <a target="_blank" href="tel:+083869697137">08386 9697137</a>
+            </div>
+          </div>
+          
+          <div id="shop96" class="legendeinfo">
+            <h5 class="number bg-purple">18</h5>
+            <div class="content">
+              <p>Café & Feinbäckerei Zendler <br>Hugo-von-Königseggstr. 12</p>
+              <a target="_blank" href="http://cafe-zendler.de">cafe-zendler.de</a>
+            </div>
+          </div>
+          
+          <div id="shop97" class="legendeinfo">
+            <h5 class="number bg-purple">19</h5>
+            <div class="content">
+              <p>City Kebap <br>Bahnhofsplatz 1</p>
+              <a target="_blank" href="tel:+083863262143">08386 3262 143</a>
+            </div>
+          </div>
+          
+          <div id="shop98" class="legendeinfo">
+            <h5 class="number bg-purple">20</h5>
+            <div class="content">
+              <p>Clubrestaurant s'Hochgradig <br>In der Au 5, Steibis</p>
+              <a target="_blank" href="tel:+01749219547">0174 9219547</a>
+            </div>
+          </div>
+  
+          <div id="shop99" class="legendeinfo">
+            <h5 class="number bg-purple">21</h5>
+            <div class="content">
+              <p>Der Birkenhof <br>Am Anger 30, Steibis</p>
+              <a target="_blank" href="http://birkenhof-oberstaufen.de">birkenhof-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop100" class="legendeinfo">
+            <h5 class="number bg-purple">22</h5>
+            <div class="content">
+              <p>Die Café Mühle <br>Lindauer Straße 26</p>
+              <a target="_blank" href="tel:+083869802420">08386 9802 420</a>
+            </div>
+          </div>
+  
+          <div id="shop101" class="legendeinfo">
+            <h5 class="number bg-purple">23</h5>
+            <div class="content">
+              <p>Dorfhaus Thalkirchdorf <br>Kirchdorfer Str. 5, Thalkirchdorf</p>
+              <a target="_blank" href="http://dorfhaus.de/">dorfhaus.de/</a>
+            </div>
+          </div>
+  
+          <div id="shop102" class="legendeinfo">
+            <h5 class="number bg-purple">24</h5>
+            <div class="content">
+              <p>Dorfmarkt Steibis <br>Im Dorf 36, Steibis</p>
+              <a target="_blank" href="tel:+083869626755">08386 9626755</a>
+            </div>
+          </div>
+  
+          <div id="shop103" class="legendeinfo">
+            <h5 class="number bg-purple">25</h5>
+            <div class="content">
+              <p>Esslust <br>Kalzhofer Straße 25</p>
+              <a target="_blank" href="http://hotel-alpenkoenig.de">hotel-alpenkoenig.de</a>
+            </div>
+          </div>
+  
+          <div id="shop104" class="legendeinfo">
+            <h5 class="number bg-purple">26</h5>
+            <div class="content">
+              <p>Goldenes Kreuz <br>Im Dorf 25,  Steibis</p>
+              <a target="_blank" href="http://urlaub-steibis.de">urlaub-steibis.de</a>
+              <a target="_blank" href="tel:+083868232">08386 8232</a>
+            </div>
+          </div>
+  
+          <div id="shop105" class="legendeinfo">
+            <h5 class="number bg-purple">27</h5>
+            <div class="content">
+              <p>Hotel-Restaurant Bad Rain <br>Hinterstaufen 9, Thalkirchdorf</p>
+              <a target="_blank" href="http://bad-rain.de">bad-rain.de</a>
+            </div>
+          </div>
+  
+          <div id="shop106" class="legendeinfo">
+            <h5 class="number bg-purple">28</h5>
+            <div class="content">
+              <p>Hotel Restaurant Dein Engel <br>Buflings 3, Buflings</p>
+              <a target="_blank" href="http://deinengel.de">deinengel.de</a>
+            </div>
+          </div>
+  
+          <div id="shop107" class="legendeinfo">
+            <h5 class="number bg-purple">29</h5>
+            <div class="content">
+              <p>Hündle-Stuben <br>Hinterstaufen 10</p>
+              <a target="_blank" href="http://huendle.de">huendle.de</a>
+            </div>
+          </div>
+  
+          <div id="shop108" class="legendeinfo">
+            <h5 class="number bg-purple">30</h5>
+            <div class="content">
+              <p>Landbäckerei Sinz <br>Hugo-von-Königseggstr. 14</p>
+              <a target="_blank" href="http://landbaeckerei-sinz.de">landbaeckerei-sinz.de</a>
+            </div>
+          </div>
+  
+          <div id="shop109" class="legendeinfo">
+            <h5 class="number bg-purple">31</h5>
+            <div class="content">
+              <p>Landhotel Alte Post <br>Lamprechts 3, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083253759975">08325 375 99 75</a>
+            </div>
+          </div>
+  
+          <div id="shop110" class="legendeinfo">
+            <h5 class="number bg-purple">32</h5>
+            <div class="content">
+              <p>Lindner Parkrestaurant <br>Argenstraße 1</p>
+              <a target="_blank" href="http://lindner.de/oberstaufen">lindner.de/oberstaufen</a>
+            </div>
+          </div>
+  
+          <div id="shop111" class="legendeinfo">
+            <h5 class="number bg-purple">33</h5>
+            <div class="content">
+              <p>Nagelfluhlounge <br>Argenstraße 3</p>
+              <a target="_blank" href="tel:+083869300443">08386 9300443</a>
+            </div>
+          </div>
+  
+          <div id="shop112" class="legendeinfo">
+            <h5 class="number bg-purple">34</h5>
+            <div class="content">
+              <p>Platzhirsch The Boutique Hotel and Cafe <br>Kapfweg 7</p>
+              <a target="_blank" href="http://boutiquehotel-platzhirsch.de">boutiquehotel-platzhirsch.de</a>
+            </div>
+          </div>
+  
+          <div id="shop113" class="legendeinfo">
+            <h5 class="number bg-purple">35</h5>
+            <div class="content">
+              <p>Restaurant Beim Schweitzer <br>Auf der Höh 1</p>
+              <a target="_blank" href="tel:+083862530">08386 2530</a>
+            </div>
+          </div>
+  
+          <div id="shop114" class="legendeinfo">
+            <h5 class="number bg-purple">36</h5>
+            <div class="content">
+              <p>Restaurant Gemse <br>Rainwaldstraße 3/EG</p>
+              <a target="_blank" href="tel:+01738692734">0173 8692734</a>
+            </div>
+          </div>
+  
+          <div id="shop115" class="legendeinfo">
+            <h5 class="number bg-purple">37</h5>
+            <div class="content">
+              <p>Restaurant Hotel Traube <br>Kirchdorfer Str. 12, Thalkirchdorf</p>
+              <a target="_blank" href="http://traube-thalkirchdorf.de">traube-thalkirchdorf.de</a>
+            </div>
+          </div>
+  
+          <div id="shop116" class="legendeinfo">
+            <h5 class="number bg-purple">38</h5>
+            <div class="content">
+              <p>Pizzeria Limone <br>Paul-Rieder-Straße 2</p>
+              <a target="_blank" href="tel:+08386980272">08386 980 272</a>
+            </div>
+          </div>
+  
+          <div id="shop117" class="legendeinfo">
+            <h5 class="number bg-purple">39</h5>
+            <div class="content">
+              <p>Pizza & Pasta <br>Im Dorf 25, Steibis</p>
+              <a target="_blank" href="tel:+08386991066">08386 991 066</a>
+            </div>
+          </div>
+  
+          <div id="shop118" class="legendeinfo">
+            <h5 class="number bg-purple">40</h5>
+            <div class="content">
+              <p>Ristorante Di Cicco <br>Bahnhofstraße 3</p>
+              <a target="_blank" href="tel:+083869912803">08386 9912 803</a>
+            </div>
+          </div>
+  
+          <div id="shop120" class="legendeinfo">
+            <h5 class="number bg-purple">41</h5>
+            <div class="content">
+              <p>Roma Centro Pizzeria <br>Kirchplatz 3</p>
+              <a target="_blank" href="tel:+08386939954">08386 939 954</a>
+            </div>
+          </div>
+
+          <div id="shop121" class="legendeinfo">
+            <h5 class="number bg-purple">42</h5>
+            <div class="content">
+              <p>Schaubrennerei "Zur Höll" <br>Willis 3, Willis</p>
+              <a target="_blank" href="tel:+083864001">08386 4001</a>
+            </div>
+          </div>
+          
+          <div id="shop122" class="legendeinfo">
+            <h5 class="number bg-purple">43</h5>
+            <div class="content">
+              <p>Schindelberg Restaurant <br>St.-Rochus-Weg 4</p>
+              <a target="_blank" href="tel:+083868184">08386 8184</a>
+            </div>
+          </div>
+          
+          <div id="shop123" class="legendeinfo">
+            <h5 class="number bg-purple">44</h5>
+            <div class="content">
+              <p>Schlemmeria im Moos <br>Birkenweg 3</p>
+              <a target="_blank" href="tel:+083863599954">08386 359 99 54</a>
+            </div>
+          </div>
+          
+          <div id="shop124" class="legendeinfo">
+            <h5 class="number bg-purple">45</h5>
+            <div class="content">
+              <p>Sinswanger Stuben <br>Sinswang 6</p>
+              <a target="_blank" href="tel:+083867471">08386 7471</a>
+            </div>
+          </div>
+          
+          <div id="shop125" class="legendeinfo">
+            <h5 class="number bg-purple">46</h5>
+            <div class="content">
+              <p>Sonne Café Restaurant <br>Lindauer Straße 2</p>
+              <a target="_blank" href="tel:+083864466">08386 4466</a>
+            </div>
+          </div>
+  
+          <div id="shop126" class="legendeinfo">
+            <h5 class="number bg-purple">47</h5>
+            <div class="content">
+              <p>Sonnenstüble <br>Meerau 10, Kalzhofen</p>
+              <a target="_blank" href="tel:+083861504">08386 1504</a>
+            </div>
+          </div>
+  
+          <div id="shop127" class="legendeinfo">
+            <h5 class="number bg-purple">48</h5>
+            <div class="content">
+              <p>Soravia Eiscafe <br>Hugo-von-Königseggstr. 16</p>
+              <a target="_blank" href="http://allgaeuer-eismanufaktur.de">allgaeuer-eismanufaktur.de</a>
+            </div>
+          </div>
+  
+          <div id="shop128" class="legendeinfo">
+            <h5 class="number bg-purple">49</h5>
+            <div class="content">
+              <p>Stadlers - Hotel Bayerischer Hof <br>Hochgratstraße 2</p>
+              <a target="_blank" href="tel:+083864950">08386 4950</a>
+            </div>
+          </div>
+  
+          <div id="shop129" class="legendeinfo">
+            <h5 class="number bg-purple">50</h5>
+            <div class="content">
+              <p>Starennest <br>Fluhstraße 14, Steibis</p>
+              <a target="_blank" href="tel:+08386939360">08386 939 360</a>
+            </div>
+          </div>
+  
+          <div id="shop130" class="legendeinfo">
+            <h5 class="number bg-purple">51</h5>
+            <div class="content">
+              <p>St. Ullr <br> Im Dorf 38, Steibis</p>
+              <a target="_blank" href="tel:+083868401">08386 8401</a>
+            </div>
+          </div>
+  
+          <div id="shop131" class="legendeinfo">
+            <h5 class="number bg-purple">52</h5>
+            <div class="content">
+              <p>s'Webstüble <br>Salzstraße 7 - 11, Thalkirchdorf</p>
+              <a target="_blank" href="http://allgaeuer-teppichmanufak-tur.de/webstueble">allgaeuer-teppichmanufak-tur.de/webstueble</a>
+            </div>
+          </div>
+  
+          <div id="shop132" class="legendeinfo">
+            <h5 class="number bg-purple">53</h5>
+            <div class="content">
+              <p>Taverna Kreta <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://kreta-oberstaufen.de">kreta-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop133" class="legendeinfo">
+            <h5 class="number bg-purple">54</h5>
+            <div class="content">
+              <p>Trattoria Mediterraneo <br>Schloßstraße 2a</p>
+              <a target="_blank" href="http://mediterraneo-oberstaufen.de">mediterraneo-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop134" class="legendeinfo">
+            <h5 class="number bg-purple">55</h5>
+            <div class="content">
+              <p>Weißachforelle <br>Mühlenstraße 1</p>
+              <a target="_blank" href="tel:+083862731">08386 2731</a>
+            </div>
+          </div>
+  
+          <div id="shop135" class="legendeinfo">
+            <h5 class="number bg-purple">56</h5>
+            <div class="content">
+              <p>Weissachmühle <br>Mühlenstraße 15</p>
+              <a target="_blank" href="http://weissachmuehle.de">weissachmuehle.de</a>
+            </div>
+          </div>
+  
+          <div id="shop136" class="legendeinfo">
+            <h5 class="number bg-purple">57</h5>
+            <div class="content">
+              <p>Wirtshaus beim Strumpfar <br>Kalzhoferstraße 14</p>
+              <a target="_blank" href="tel:+083869627170">08386 9627 170</a>
+            </div>
+          </div>
+  
+          <div id="shop137" class="legendeinfo">
+            <h5 class="number bg-purple">58</h5>
+            <div class="content">
+              <p>Wirtshaus zum Kesslar <br>Lindauer Straße 1 </p>
+              <a target="_blank" href="tel:+083863262095">08386 3262095</a>
+            </div>
+          </div>
+  
+          <div id="shop138" class="legendeinfo">
+            <h5 class="number bg-purple">59</h5>
+            <div class="content">
+              <p>Zur Alten Salzstraße <br>Salzstraße 36, Thalkirchdorf</p>
+              <a target="_blank" href="tel:+083259279233">08325 9279233</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="d-map-box">
+
+      <div class="d-map-box-inner">  
+        <div class="box">
+  
+          <div class="header bg-pink">
+            <h5>AUSGEHEN</h5>
+          </div>
+  
+          <div id="shop139" class="legendeinfo">
+            <h5 class="number bg-pink">1</h5>
+            <div class="content">
+              <p>Alpe Mohr <br>Kalzhofen 3</p>
+              <a target="_blank" href="tel:+01717595081">0171 7595081</a>
+            </div>
+          </div>
+  
+          <div id="shop140" class="legendeinfo">
+            <h5 class="number bg-pink">2</h5>
+            <div class="content">
+              <p>Allgäu Treff <br>Bahnhofstraße 7</p>
+              <a target="_blank" href="tel:+01717595081">0177 1621 787</a>
+            </div>
+          </div>
+  
+          <div id="shop141" class="legendeinfo">
+            <h5 class="number bg-pink">3</h5>
+            <div class="content">
+              <p>Apostl Tanzlokal <br>Bahnhofsplatz 2</p>
+              <a target="_blank" href="http://apostl.de">apostl.de</a>
+            </div>
+          </div>
+  
+          <div id="shop142" class="legendeinfo">
+            <h5 class="number bg-pink">4</h5>
+            <div class="content">
+              <p>AuszeitBar Bistro <br>Lindauer Straße 25</p>
+              <a target="_blank" href="http://auszeit-oberstaufen.com">auszeit-oberstaufen.com</a>
+            </div>
+          </div>
+  
+          <div id="shop143" class="legendeinfo">
+            <h5 class="number bg-pink">5</h5>
+            <div class="content">
+              <p>Blockhütte <br>Willis 2, Willis</p>
+              <a target="_blank" href="tel:+083861240">08386 1240</a>
+            </div>
+          </div>
+  
+          <div id="shop144" class="legendeinfo">
+            <h5 class="number bg-pink">6</h5>
+            <div class="content">
+              <p>Bubis Bar <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://bubisbar-oberstaufen.de">bubisbar-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop145" class="legendeinfo">
+            <h5 class="number bg-pink">7</h5>
+            <div class="content">
+              <p>Café Ponyhof <br>Hinterhalden 9</p>
+              <a target="_blank" href="tel:+083862250">08386 2250</a>
+            </div>
+          </div>
+  
+          <div id="shop146" class="legendeinfo">
+            <h5 class="number bg-pink">8</h5>
+            <div class="content">
+              <p>Genussraum Schönherr <br>Kalzhofer Straße 1</p>
+              <a target="_blank" href="http://genussraumschoenherr.de">genussraumschoenherr.de</a>
+            </div>
+          </div>
+  
+          <div id="shop147" class="legendeinfo">
+            <h5 class="number bg-pink">9</h5>
+            <div class="content">
+              <p>GLOBUS <br> Bar Lounge Restaurant <br>Immenstädter Straße 4</p>
+              <a target="_blank" href="http://globus-oberstaufen.de">globus-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop148" class="legendeinfo">
+            <h5 class="number bg-pink">10</h5>
+            <div class="content">
+              <p>HansiBAR/Resort Bergkristall <br>Willis 8, Willis</p>
+              <a target="_blank" href="tel:+083869110">08386 911-0</a>
+            </div>
+          </div>
+  
+          <div id="shop149" class="legendeinfo">
+            <h5 class="number bg-pink">11</h5>
+            <div class="content">
+              <p>Königlich Bayerische Enzianhütte <br>Mühlenstraße 24, Weissach</p>
+              <a target="_blank" href="tel:+08386661">08386 661</a>
+            </div>
+          </div>
+  
+          <div id="shop150" class="legendeinfo">
+            <h5 class="number bg-pink">12</h5>
+            <div class="content">
+              <p>Musikalm Steibis <br>In der Au 9, Steibis</p>
+              <a target="_blank" href="tel:+08386980539">08386 980539</a>
+            </div>
+          </div>
+  
+          <div id="shop151" class="legendeinfo">
+            <h5 class="number bg-pink">13</h5>
+            <div class="content">
+              <p>Restaurant Apost'l Alm <br>Bahnhofsplatz 2</p>
+              <a target="_blank" href="tel:+08386969637">08386 969637</a>
+            </div>
+          </div>
+  
+          <div id="shop152" class="legendeinfo">
+            <h5 class="number bg-pink">14</h5>
+            <div class="content">
+              <p>S’Älple <br>Kirchplatz 6</p>
+              <a target="_blank" href="tel:+08338693210">08338 693210</a>
+            </div>
+          </div>
+  
+          <div id="shop153" class="legendeinfo">
+            <h5 class="number bg-pink">15</h5>
+            <div class="content">
+              <p>Scenetreffbyfranco <br>Am Seelesgraben 8</p>
+              <a target="_blank" href="tel:+015157281158">0151 57281158</a>
+            </div>
+          </div>
+  
+          <div id="shop154" class="legendeinfo">
+            <h5 class="number bg-pink">16</h5>
+            <div class="content">
+              <p>Servus Club <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="tel:+083869805760">08386 9805 760</a>
+            </div>
+          </div>
+  
+          <div id="shop155" class="legendeinfo">
+            <h5 class="number bg-pink">17</h5>
+            <div class="content">
+              <p>Staufner Stub'n im Hotel Tyrol <br>Am Kühlen Grund 1</p>
+              <a target="_blank" href="http://hotel-tyrol-oberstaufen.de">hotel-tyrol-oberstaufen.de</a>
+            </div>
+          </div>
+  
+          <div id="shop156" class="legendeinfo">
+            <h5 class="number bg-pink">18</h5>
+            <div class="content">
+              <p>Stießbergstüble <br> Stießberg 1</p>
+              <a target="_blank" href="http://allgaeu-sonne.de">allgaeu-sonne.de</a>
+            </div>
+          </div>
+  
+          <div id="shop157" class="legendeinfo">
+            <h5 class="number bg-pink">19</h5>
+            <div class="content">
+              <p>Südpunkt Clublounge <br>Rothenfelsstraße 1</p>
+              <a target="_blank" href="tel:+083869803556">08386 9803 556</a>
+            </div>
+          </div>
+  
+          <div id="shop158" class="legendeinfo">
+            <h5 class="number bg-pink">20</h5>
+            <div class="content">
+              <p>Zum Armen Holdi <br>Jahnstraße 5</p>
+              <a target="_blank" href="tel:+083862949">08386 2949</a>
+            </div>
+          </div>
+  
+          <div id="shop159" class="legendeinfo">
+            <h5 class="number bg-pink">21</h5>
+            <div class="content">
+              <p>Zum Goißgässle Gaststätte <br>Lindauer Straße 6</p>
+              <a target="_blank" href="tel:+083861577">08386 1577</a>
+            </div>
+          </div>
+          
+          <div class="header bg-yellow text-dark">
+            <h5>GESUNDHEIT</h5>
+          </div>
+  
+          <div id="shop160" class="legendeinfo">
+            <h5 class="number bg-yellow text-dark">1</h5>
+            <div class="content">
+              <p>Reformhaus Bingger <br>Lindauer Straße 17</p>
+              <a target="_blank" href="http://bingger.de/reformhaus">bingger.de/reformhaus</a>
+            </div>
+          </div>
+  
+          <div id="shop161" class="legendeinfo">
+            <h5 class="number bg-yellow text-dark">2</h5>
+            <div class="content">
+              <p>Staufner Apotheke <br>Hugo-von-Königseggstr. 4</p>
+              <a target="_blank" href="http://staufner-apotheke.de">staufner-apotheke.de</a>
+            </div>
+          </div>
+  
+          <div class="header bg-blue">
+            <h5>SONSTIGE</h5>
+          </div>
+  
+          <div id="shop162" class="legendeinfo">
+            <h5 class="number bg-blue">1</h5>
+            <div class="content">
+              <p>Bürobedarf Mohr <br>Max-Ostheimer-Str. 2</p>
+              <a target="_blank" href="tel:+083861027">08386 1027</a>
+            </div>
+          </div>
+  
+          <div id="shop163" class="legendeinfo">
+            <h5 class="number bg-blue">2</h5>
+            <div class="content">
+              <p>Micktecalles für ihre Kommunikation <br>Lindauer Straße 26</p>
+              <a href="https://micktec.de">micktec.de</a>
+            </div>
+          </div>
+  
+          <div id="shop164" class="legendeinfo">
+            <h5 class="number bg-blue">3</h5>
+            <div class="content">
+              <p>Pfötchen Shop <br>Kirchplatz 14</p>
+              <a target="_blank" href="tel:+083863829882">08386 3829882</a>
+            </div>
+          </div>
+  
+          <div id="shop165" class="legendeinfo">
+            <h5 class="number bg-blue">4</h5>
+            <div class="content">
+              <p>Schwärzler Schliesssysteme <br>Rainwaldstraße 2</p>
+              <a target="_blank" href="http://schwaerzler-schliesssysteme.de">schwaerzler-schliesssysteme.de</a>
+            </div>
+          </div>
+          
+          <div class="qr-code">
+            <img src="qr-img.png" alt="">
+            <a target="_blank" href="https://meinoberstaufen.de/">meinoberstaufen.de</a>
+          </div>
+  
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+     <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+      <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+       <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+        <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+         <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+          <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+           <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+            <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+             <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+              <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+               <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                 <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+     <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+      <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+       <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+        <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+         <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+          <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+           <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+            <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+             <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+              <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+               <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                 <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+     <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+      <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+       <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+        <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+         <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+          <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+           <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+            <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+             <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+              <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+               <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                 <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+ <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+    <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+     <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+      <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+       <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+        <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+         <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+          <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+           <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+            <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+             <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+              <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+               <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                 <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                  <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+                   <!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE--><!--PLACE THE LEGEND HERE--> <!--PLACE THE LEGEND HERE-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   <footer class="unique-footer">
+                    <div class="unique-footer-content">
+                        <p class="unique-footer-text">&copy; 2024 © Mein Oberstaufen. Alle Rechte vorbehalten.</p>
+                        <div class="unique-footer-links">
+                            <a href="#impressum" class="unique-footer-link">Impressum</a>
+                            <a href="#datenschutz" class="unique-footer-link">Datenschutz</a>
+                        </div>
+                    </div>
+                </footer>
+                
+
+
+
+
+
+                   <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                    <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                     <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                      <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                       <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                        <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                         <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                          <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                           <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                            <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                             <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                              <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                               <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                                <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                                 <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                                  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                                   <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+                                    <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->  <!--FOOTER-->
+
+<script>document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("unique-hamburger");
+  const menu = document.getElementById("unique-menu");
+
+  hamburger.addEventListener("click", () => {
+      menu.classList.toggle("active"); // Toggle the 'active' class
+  });
+});
+</script>
+                                    <script>
+                                      const tooltip = document.getElementById("tooltip");
+                                    
+                                      // Shops Hinzufügen //
+                                      const shops = [
+                                     //
+                                        //Hellblau -- Mode/Schuhe/Sport
+
+                                        {
+                                            id: "shop1",
+                                            x: 972,
+                                            y: 653,
+                                            name: "LAND-HAUS Factory",
+                                            beschreibung: "Alpiner Lifestyle und Trachtenmode. Tradition trifft auf Moderne! Sie suchen Dirndl und Lederhosen - mit den passenden Accessoires - in angenehmer Atmosphäre - mit freundlicher und fachkompetenter Beratung - dann sind Sie bei uns richtig!",
+                                            image: "Mapshopbilder/laedenbilder/LAND-HAUS Factory/Logo LAND-HAUS-1.png",
+                                            popupbild1: "Mapshopbilder/laedenbilder/LAND-HAUS Factory/1.JPG",
+                                            popupbild2: "Mapshopbilder/laedenbilder/LAND-HAUS Factory/2.JPG",
+                                            popupbild3: "Mapshopbilder/laedenbilder/LAND-HAUS Factory/3.JPG",
+                                            hours: "MO - FR: 09:30 - 18:00 Uhr SA: 09:30 - 16:00 Uhr",
+                                            contact: "(0049) 8386 939153",
+                                            productInfo: "Damen - Herren - Kinder - Accessoires - Geschenkartikel - Wohnartikel",
+                                            address: "Adresse: Rainwaldstraße 387534 Oberstaufen",
+                                            domain: "www.trachten-landhaus.de",
+                                            tooltipText: "Land-Haus"  // Neues Tooltip-Feld
+                                          },
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 565,
+                                            y: 685,
+                                            name: "Mode Kundruweit",
+                                            beschreibung: "Herrenausstatter seit 1949",
+                                            image: "Mapshopbilder/laedenbilder/Kundruweit/Kundruweit_logo.jpg",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Kundruweit/1.JPG",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Kundruweit/2.JPG",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Kundruweit/3.JPG",
+                                            hours: "MO - FR: 09:30 - 18:00 Uhr MI: 09:30 - 13:00 Uhr SA: 09:30 - 14:00 Uhr",
+                                            contact: "(0049) 8386 2905",
+                                            productInfo: "Hochwertige Herrenmode",
+                                            address: "Adresse: Schloßstraße 87534 Oberstaufen",
+                                            domain: "www.kundruweit.de",
+                                            tooltipText: "Kundruweit"  // Neues Tooltip-Feld
+                                          },
+
+                          
+                                          {
+                                            id: "shop999",
+                                            x: 637,
+                                            y: 752,
+                                            name: "Hagspiel",
+                                            beschreibung: "Unser Credo ist es Sie von unserer Liebe zur Mode und unserem Service zu begeistern. Hochwertige Firmen, spannende kleine Labels und liebevoll ausgesuchte Accessoires runden das besondere Einkaufserlebnis ab. Erleben Sie es selbst – wir freuen uns auf Sie.",
+                                            image: "#",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Hagspiel/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Hagspiel/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Hagspiel/3.jpg",
+                                            hours: "MO - FR: 10:00 – 18:00 Uhr SA: 10:00 – 17:00 Uhr",
+                                            contact: "(0049) 8386 3263412",
+                                            productInfo: "Hochwertige, sportlich-lässige und nachhaltige Mode (Damen und Herren)",
+                                            address: "Adresse: Schloßstraße.5 87534 Oberstaufen",
+                                            domain: "www.hagspiel-moden.de",
+                                            tooltipText: "Hagspiel"  // Neues Tooltip-Feld
+                                          },
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 988,
+                                            y: 605,
+                                            name: "Hubert Pflug Schuhmoden & Accessoires",
+                                            beschreibung: "Auf einigen hundert Quadratmetern erwartet sie eine Fashionwelt der besonderen Art. Schuhe, Mode, Taschen, Accessoires, fantasievoll und harmonisch kombiniert und aufeinander abgestimmt. Neuste Trends und zeitlose Klassik werden bei Hubert Pflug präsentiert!",
+                                            image: "Mapshopbilder/laedenbilder/Hubert Pflug Schuhmoden/logo.jpg",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Hubert Pflug Schuhmoden/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Hubert Pflug Schuhmoden/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Hubert Pflug Schuhmoden/3.jpg",
+                                            hours: "MO - FR: 10:00 - 13:00 Uhr & 14:30 - 18:00  Uhr SA: 10:00 - 13:00 Uhr",
+                                            contact: "(0049) 8386 4582",
+                                            productInfo: "Schuhe, Taschen, Mode & Accessoires namhafter Designer und Labels!",
+                                            address: "Adresse: Bahnhofstraße 4a 87534 Oberstaufen",
+                                            domain: "www.hubert-pflug.de",
+                                            tooltipText: "Hubert Pflug Schuhmoden und Accessoires"  // Neues Tooltip-Feld
+                                          },
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 392,
+                                            y: 272,
+                                            name: "Schnäppchen-Schuh",
+                                            beschreibung: "In unserem ´Schnäppchen-Schuh´ finden sie Markenschuhe & Accessoires vieler namhafter und internationaler Firmen wie Designerlabels zu erheblich reduzierten Preisen! Immer neue und sensationelle Angebote! Hier findet jeder ´sein´ einzigartiges Schnäppchen!",
+                                            image: "Mapshopbilder/laedenbilder/Schnäpchen Schuh/logo.jpg",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Schnäpchen Schuh/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Schnäpchen Schuh/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Schnäpchen Schuh/3.jpg",
+                                            hours: "MO - FR: 10:00 - 13:00 Uhr & 14:30 - 18:00 Uhr SA: 10:00 - 13:00 Uhr",
+                                            contact: "(0049) 8386 7547",
+                                            productInfo: "Schuhe, Taschen, Mode & Accessoires zu erheblich reduzierten Preisen!",
+                                            address: "Adresse: Lindauerstraße 26 87534 Oberstaufen",
+                                            domain: "www.hubert-pflug.de",
+                                            tooltipText: "Schnäppchen - Schuh"  // Neues Tooltip-Feld
+                                          },
+
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 1229,
+                                            y: 638,
+                                            name: "OBERMEYER Modemarkt",
+                                            beschreibung: "MODE FÜR DIE GANZE FAMILIE. Auf 700 qm und zwei Etagen präsentiert der OBERMEYER Modemarkt exklusive Mode für Damen, Herren und Kinder. Wert auf Qualität und Service wird hier großgeschrieben. Ein Shopping-Erlebnis für die ganze Familie erwartet Sie.",
+                                            image: "Mapshopbilder/laedenbilder/Obermeyer/logo.png",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Obermeyer/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Obermeyer/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Obermeyer/3.jpg",
+                                            hours: "MO - FR: 09:00 - 18:00 Uhr SA: 09:00 - 13:00 Uhr",
+                                            contact: "(0049) 8386 2811",
+                                            productInfo: "OBERMEYER Modemarkt exkl. Mode für Damen, Herren und Kinder auf 700 qm.",
+                                            address: "Adresse: Gottfried-Resl-Weg 4 87534 Oberstaufen",
+                                            domain: "",
+                                            tooltipText: "OBERMEYER Modemarkt"  // Neues Tooltip-Feld
+                                          },
+
+
+
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 595,
+                                            y: 765,
+                                            name: "Hagspiel MÄNNER",
+                                            beschreibung: "Unser Credo ist es Sie von unserer Liebe zur Mode und unserem Service zu begeistern. Hochwertige Firmen, spannende kleine Labels und liebevoll ausgesuchte Accessoires runden das besondere Einkaufserlebnis ab. Erleben Sie es selbst – wir freuen uns auf Sie.",
+                                            image: "Mapshopbilder/laedenbilder/Hagspiel Männer/logo.jpg",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Hagspiel Männer/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Hagspiel Männer/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Hagspiel Männer/3.jpg",
+                                            hours: "MO - FR: 10:00 – 18:00 Uhr SA: 10:00 – 17:00 Uhr",
+                                            contact: "(0049) 8386 3263412",
+                                            productInfo: "Hochwertige, sportlich-lässige und nachhaltige Mode (Damen und Herren)",
+                                            address: "Adresse: Schloßstraße 7 87534 Oberstaufen",
+                                            domain: "www.hagspiel-moden.de",
+                                            tooltipText: "Hagspiel MÄNNER"  // Neues Tooltip-Feld
+                                          },
+
+
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 727,
+                                            y: 662,
+                                            name: "Felbinger Damenausstatter und Aigner Shop",
+                                            beschreibung: "Wir sind nicht artig – sondern einzigartig! Willkommen in unserer Welt der Styles, wo Ladies alles finden, was sie für einen coolen Auftritt brauchen. Lasst Euch von uns inspirieren. Gerne stehen wir Euch mit Witz, Charme und Fachwissen zur Seite.",
+                                            image: "Mapshopbilder/laedenbilder/Felbinger/logo2.png",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Felbinger/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Felbinger/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Felbinger/3.jpg",
+                                            hours: "MO - FR: 9:30 - 13:00 Uhr und 14:00 bis 18:00 Uhr, SA 9:30 bis 14:00 Uhr",
+                                            contact: "(0049) 8386 4616",
+                                            productInfo: "Blusen Strick Jeans Hosen Jacken Handtaschen Gürtel Lederaccessoires.",
+                                            address: "Adresse: Schloßstraße 2 87534 Oberstaufen",
+                                            domain: "www.felbinger-damenausstatter.de",
+                                            tooltipText: "Felbinger"  // Neues Tooltip-Feld
+                                          },
+
+
+
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 431,
+                                            y: 567,
+                                            name: "émilia Mode",
+                                            beschreibung: "Unsere Mode spiegelt den „Look der Leichtigkeit“ wider. Lassen Sie sich auf 2 Etagen von den neuesten Trends inspirieren. Entdecken Sie die Vielfalt an aufregenden Outfitideen. Bei uns wird Einkaufen zur entspannten Auszeit, bei der Sie im Mittelpunkt stehen.",
+                                            image: "Mapshopbilder/laedenbilder/emilia/logo.png",
+                                            popupbild1: "Mapshopbilder/laedenbilder/emilia/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/emilia/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/emilia/3.jpg",
+                                            hours: "Montag bis Freitag 10:00 bis 18:00 Uhr Samstag 10:00 bis 16:00 Uhr  „Private Shopping“ nach telefonischer Vereinbarung Saisonale/witterungsbedingte Abweichungen kurzfristig möglich",
+                                            contact: "(0049) 8386-3730588",
+                                            productInfo: "Trendige Mode für Frauen von lässig bis chic - …einfach zum Wohlfühlen!",
+                                            address: "Adresse: Rothenfelsstr. 6 - DAS.HOCHGRAT 87534 Oberstaufen",
+                                            domain: "www.emiliamode.com",
+                                            tooltipText: "émilia Mode"  // Neues Tooltip-Feld
+                                          },
+
+
+
+
+                                          {
+                                            id: "shop999",
+                                            x: 577,
+                                            y: 720,
+                                            name: "Schuhe wie Barfuß",
+                                            beschreibung: "Reinschlüpfen und wohlfühlen! Barfußschuh für Damen, Herren und Kinder von verschiedenen Herstellern. Wir vermessen ihre Füße und finden die passenden Schuhe für Sie. Erlebe den Unterschied zu herkömmlichen Schuhen. Mit Barfußschuhen zu mehr GEH-fühl!",
+                                            image: "Mapshopbilder/laedenbilder/Schuhewiebarfuss/logo.jpg",
+                                            popupbild1: "Mapshopbilder/laedenbilder/Schuhewiebarfuss/1.jpg",
+                                            popupbild2: "Mapshopbilder/laedenbilder/Schuhewiebarfuss/2.jpg",
+                                            popupbild3: "Mapshopbilder/laedenbilder/Schuhewiebarfuss/3.jpg",
+                                            hours: "Mo - Fr: 10 – 13 & 14:30 – 18 Uhr MI nachmittags geschlossen Sa: 10 – 15 Uhr",
+                                            contact: "(0049) 8386 3260248",
+                                            productInfo: "Schuhe: Anatomische Zehenbox, Flexible Sohle, Nullabsatz, Federleicht.",
+                                            address: "Adresse: Schloßstraße 10 87534 Oberstaufen",
+                                            domain: " www.schuhewiebarfuss-oberstaufen.de",
+                                            tooltipText: "Schuhe wie Barfuß"  // Neues Tooltip-Feld
+                                          },
+
+
+                                          
+
+                                        //Hellgrün -- Geschenke/Accesoires
+                                        //Hellgrün -- Geschenke/Accesoires
+                                        //Grau     -- Feinkost/Lebensmittel
+                                        //Türkis   -- Einrichten/Wohnen
+                                        //Rosa     -- Restaurant/Bar/Cafe
+                                        //Rot      -- Ausgehen
+                                        //Gelb     -- Gesundheit
+                                        //Dunkelblau -- Sonstige
+
+
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+ // ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+ // ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+                                      ]; // ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+// ** NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN!  NICHT LÖSCHEN! NICHT LÖSCHEN! **//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                      // Pop-up und Overlay
+                                      const popup = document.getElementById("popup");
+                                      const overlay = document.getElementById("overlay");
+                                      const popupTitle = document.getElementById("popupTitle");
+                                      const popupbeschreibung = document.getElementById("popupbeschreibung");
+                                      const popupHours = document.getElementById("popupHours");
+                                      const popupContact = document.getElementById("popupContact");
+                                      const popupProductInfo = document.getElementById("popupProductInfo");
+                                      const popupLogo = document.getElementById("popupLogo");
+                                      const popupbild1 = document.getElementById("popupbild1");
+                                      const popupbild2 = document.getElementById("popupbild2");
+                                      const popupbild3 = document.getElementById("popupbild3");
+                                      const popupcontact = document.getElementById("popupContact");
+                                      const popupadresse = document.getElementById("popupadresse");
+                                      const popupDomain = document.getElementById("popupDomain");
+                                    
+                                      // Store the initial viewport meta content
+                                      let initialViewportContent = document.querySelector("meta[name=viewport]")
+                                        .content;
+                                      let viewportMeta = document.querySelector("meta[name=viewport]");
+                                    
+                                      // Function to reset zoom when popup opens
+                                      function resetZoomForPopup() {
+                                        if (!viewportMeta) {
+                                          viewportMeta = document.createElement("meta");
+                                          viewportMeta.name = "viewport";
+                                          document.head.appendChild(viewportMeta);
+                                        }
+                                        viewportMeta.content =
+                                          "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+                                      }
+                                    
+                                      // Function to restore zoom functionality
+                                      function restoreZoom() {
+                                        if (viewportMeta) {
+                                          viewportMeta.content = initialViewportContent;
+                                        }
+                                      }
+                                    
+                                      // Funktion, um das Popup zu öffnen
+                                      function openPopup(shop) {
+                                        popupTitle.textContent = shop.name;
+                                        popupbeschreibung.textContent = shop.beschreibung;
+                                        popupHours.textContent = shop.hours;
+                                        popupContact.textContent = shop.contact;
+                                        popupProductInfo.textContent = shop.productInfo;
+                                        popupLogo.src = shop.image;
+                                        popupbild1.src = shop.popupbild1;
+                                        popupbild2.src = shop.popupbild2;
+                                        popupbild3.src = shop.popupbild3;
+                                        popupcontact.innerHTML = `<i class="ri-phone-line personal"></i><a href="tel:${shop.contact}">${shop.contact}</a>`;
+                                        popupadresse.innerHTML = `<i class="ri-home-5-line personal"></i> ${shop.address}`;
+                                        popupDomain.innerHTML = `<i class="ri-global-line personal"></i> <a href="https://${shop.domain}" target="_blank">${shop.domain}</a>`;
+                                    
+                                        // Display popup
+                                        popup.style.display = "block";
+                                        overlay.style.display = "block";
+                                    
+                                        // Reset zoom for popup
+                                        resetZoomForPopup();
+                                      }
+                                    
+                                      // Popup schließen
+                                      function closePopup() {
+                                        popup.style.display = "none";
+                                        overlay.style.display = "none";
+                                    
+                                        // Restore zoom functionality
+                                        restoreZoom();
+                                      }
+                                    
+                                      // Shops zum SVG hinzufügen
+                                      const shopGroup = document.getElementById("shopGroup");
+                                      shops.forEach((shop) => {
+                                        const rect = document.createElementNS(
+                                          "http://www.w3.org/2000/svg",
+                                          "rect"
+                                        );
+                                        rect.setAttribute("id", shop.id); // ID für das SVG-Element
+                                        rect.setAttribute("x", shop.x);
+                                        rect.setAttribute("y", shop.y);
+                                        rect.setAttribute("width", "10");
+                                        rect.setAttribute("height", "10");
+                                        rect.setAttribute("fill", "red");
+                                        rect.setAttribute("cursor", "pointer");
+                                        rect.addEventListener("click", () => openPopup(shop));
+                                        shopGroup.appendChild(rect);
+                                    
+                                        // Tooltip hinzufügen
+                                        rect.addEventListener("mouseenter", (event) => {
+                                          tooltip.textContent = shop.tooltipText; // TooltipText statt Name
+                                          tooltip.style.display = "block";
+                                          tooltip.style.left = `${event.pageX + 5}px`;
+                                          tooltip.style.top = `${event.pageY + 5}px`;
+                                        });
+                                    
+                                        rect.addEventListener("mouseleave", () => {
+                                          tooltip.style.display = "none";
+                                        });
+                                      });
+                                    
+                                      document.querySelectorAll(".legendeinfo").forEach((element) => {
+                                        element.addEventListener("click", () => {
+                                          const id = element.id; // Hole die ID des geklickten Elements
+                                          const shop = shops.find((shop) => shop.id === id); // Passenden Shop finden
+                                          if (shop) {
+                                            openPopup(shop); // Popup öffnen mit den Shop-Daten
+                                          }
+                                        });
+                                      });
+                                    </script>
+                                    
+                                    <script>// Function to reset zoom level
+                                      function resetZoom() {
+                                          document.body.style.transform = 'scale(1)';
+                                          document.body.style.transformOrigin = '0 0';
+                                          document.documentElement.style.zoom = '100%';
+                                      }
+                                      
+                                      // Add event listener to all rect elements
+                                      document.querySelectorAll('rect').forEach((rect) => {
+                                          rect.addEventListener('click', () => {
+                                              resetZoom(); // Reset zoom when a rectangle is tapped
+                                          });
+                                      });
+                                      </script>
+
+
+  </body>
+</html>
